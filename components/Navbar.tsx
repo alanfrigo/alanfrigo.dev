@@ -57,11 +57,13 @@ export default function Navbar() {
     };
 
     const certificationsLabel = language === 'en' ? 'Certifications' : 'Certificações';
+    const projectsLabel = language === 'en' ? 'Projects' : 'Projetos';
 
     const navLinks = [
         { id: 'about', label: t.nav.about },
         { id: 'experience', label: t.nav.experience },
         { id: 'skills', label: t.nav.skills },
+        { id: 'projects', label: projectsLabel },
         { id: 'certifications', label: certificationsLabel },
         { id: 'education', label: t.nav.education },
         { id: 'contact', label: t.nav.contact },

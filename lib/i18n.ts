@@ -153,6 +153,18 @@ Developed effective sales funnels and newsletter campaigns that improved custome
                 },
             },
         },
+        // Projects Section
+        projects: {
+            title: 'Projects',
+            viewOnGithub: 'View on GitHub',
+            items: {
+                supapanel: {
+                    name: 'SupaPanel',
+                    description: 'Open-source management panel for self-hosted Supabase instances. Deploy your own Supabase infrastructure on any Linux server with a single command.',
+                    features: ['One-Command Install', 'Docker Integration', 'Traefik Reverse Proxy', 'Automatic HTTPS', 'Multi-Project Management', 'Custom Domains'],
+                },
+            },
+        },
         // Contact Section
         contact: {
             title: "Let's Connect",
@@ -313,6 +325,18 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
                     degree: 'Tecnólogo',
                     field: 'Processos Gerenciais',
                     period: '2018',
+                },
+            },
+        },
+        // Projects Section
+        projects: {
+            title: 'Projetos',
+            viewOnGithub: 'Ver no GitHub',
+            items: {
+                supapanel: {
+                    name: 'SupaPanel',
+                    description: 'Painel de gerenciamento open-source para instâncias Supabase self-hosted. Implante sua própria infraestrutura Supabase em qualquer servidor Linux com um único comando.',
+                    features: ['Instalação com Um Comando', 'Integração Docker', 'Proxy Reverso Traefik', 'HTTPS Automático', 'Gerenciamento Multi-Projeto', 'Domínios Customizados'],
                 },
             },
         },
