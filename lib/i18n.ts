@@ -163,6 +163,11 @@ Developed effective sales funnels and newsletter campaigns that improved custome
                     description: 'Open-source management panel for self-hosted Supabase instances. Deploy your own Supabase infrastructure on any Linux server with a single command.',
                     features: ['One-Command Install', 'Docker Integration', 'Traefik Reverse Proxy', 'Automatic HTTPS', 'Multi-Project Management', 'Custom Domains'],
                 },
+                rkj: {
+                    name: 'RKJ.AI',
+                    description: 'Intelligent Meeting Assistant. Automatically record and transcribe your Google Meet & Zoom meetings. Self-hosted and open source.',
+                    features: ['Google Calendar Sync', 'Auto-Join Bot', 'HD Recording', 'AI Transcription', 'Speaker ID', 'Full-Text Search'],
+                },
             },
         },
         // Contact Section
@@ -337,6 +342,11 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
                     name: 'SupaPanel',
                     description: 'Painel de gerenciamento open-source para instâncias Supabase self-hosted. Implante sua própria infraestrutura Supabase em qualquer servidor Linux com um único comando.',
                     features: ['Instalação com Um Comando', 'Integração Docker', 'Proxy Reverso Traefik', 'HTTPS Automático', 'Gerenciamento Multi-Projeto', 'Domínios Customizados'],
+                },
+                rkj: {
+                    name: 'RKJ.AI',
+                    description: 'Assistente de Reuniões Inteligente. Grava e transcreve automaticamente suas reuniões do Google Meet e Zoom. Self-hosted e open source.',
+                    features: ['Sincronização Google Calendar', 'Bot de Entrada Automática', 'Gravação HD', 'Transcrição com IA', 'Identificação de Falantes', 'Busca Full-Text'],
                 },
             },
         },

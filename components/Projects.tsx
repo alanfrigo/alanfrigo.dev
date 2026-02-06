@@ -8,11 +8,17 @@ export default function Projects() {
 
     const projects = [
         {
+            key: 'rkj',
+            logo: '/rkj-logo.svg',
+            technologies: ['Next.js 16', 'FastAPI', 'Python', 'Docker', 'OpenAI Whisper', 'Supabase', 'Playwright'],
+            githubUrl: 'https://github.com/alanfrigo/rkj-ai',
+        },
+        {
             key: 'supapanel',
             logo: '/logo-supapanel.png',
             technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Docker', 'Traefik'],
             githubUrl: 'https://github.com/alanfrigo/SupaPanel',
-        },
+        }
     ];
 
     return (

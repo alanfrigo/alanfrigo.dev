@@ -34,7 +34,7 @@ export default function About() {
                         { value: '9+', label: 'Years Experience' },
                         { value: '6', label: 'Companies' },
                         { value: '20+', label: 'Technologies' },
-                        { value: '3', label: 'Countries' },
+                        { value: '2', label: 'Countries' },
                     ].map((stat, index) => (
                         <div
                             key={index}
