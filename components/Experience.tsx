@@ -20,20 +20,20 @@ export default function Experience() {
     const [expandedCard, setExpandedCard] = useState<string | null>('indominusAI');
 
     return (
-        <section id="experience" className="py-20 sm:py-32 bg-zinc-50 dark:bg-zinc-900">
+        <section id="experience" className="py-20 sm:py-32 bg-bg-surface-alt">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-white mb-4">
+                    <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
                         {t.experience.title}
                     </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full" />
+                    <div className="w-12 h-0.5 bg-accent mx-auto" />
                 </div>
 
                 {/* Timeline */}
                 <div className="relative">
                     {/* Timeline line */}
-                    <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 via-purple-600 to-blue-600 transform md:-translate-x-1/2" />
+                    <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border transform md:-translate-x-1/2" />
 
                     {/* Experience Cards */}
                     <div className="space-y-12">
@@ -49,7 +49,7 @@ export default function Experience() {
                                         }`}
                                 >
                                     {/* Timeline dot */}
-                                    <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full transform -translate-x-1/2 md:-translate-x-1/2 ring-4 ring-zinc-50 dark:ring-zinc-900 z-10" />
+                                    <div className="absolute left-0 md:left-1/2 w-3 h-3 bg-accent rounded-full transform -translate-x-1/2 md:-translate-x-1/2 ring-4 ring-bg-surface-alt z-10" />
 
                                     {/* Content */}
                                     <div
@@ -58,27 +58,27 @@ export default function Experience() {
                                     >
                                         <button
                                             onClick={() => setExpandedCard(isExpanded ? null : key)}
-                                            className={`w-full text-left p-6 bg-white dark:bg-zinc-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 ${isExpanded
-                                                ? 'border-blue-500 dark:border-blue-500'
-                                                : 'border-transparent hover:border-zinc-200 dark:hover:border-zinc-700'
+                                            className={`w-full text-left p-6 bg-bg-surface rounded-xl transition-colors duration-200 border ${isExpanded
+                                                ? 'border-accent/40'
+                                                : 'border-border hover:border-accent/40'
                                                 }`}
                                         >
                                             <div className="flex items-start justify-between gap-4">
                                                 <div className="flex-1">
-                                                    <h3 className="text-xl font-bold text-zinc-900 dark:text-white">
+                                                    <h3 className="text-xl font-semibold text-text-primary">
                                                         {position.role}
                                                     </h3>
-                                                    <p className="text-blue-600 dark:text-blue-400 font-semibold mt-1">
+                                                    <p className="text-accent font-medium mt-1">
                                                         {position.company}
                                                     </p>
-                                                    <div className="flex flex-wrap items-center gap-2 mt-2 text-sm text-zinc-500 dark:text-zinc-500">
+                                                    <div className="flex flex-wrap items-center gap-2 mt-2 text-sm text-text-muted">
                                                         <span>{position.period}</span>
                                                         <span className="hidden sm:inline">•</span>
                                                         <span className="hidden sm:inline">{position.location}</span>
                                                     </div>
                                                 </div>
                                                 <svg
-                                                    className={`w-5 h-5 text-zinc-400 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''
+                                                    className={`w-5 h-5 text-text-muted transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''
                                                         }`}
                                                     fill="none"
                                                     stroke="currentColor"
@@ -98,14 +98,14 @@ export default function Experience() {
                                                 className={`overflow-hidden transition-all duration-300 ${isExpanded ? 'max-h-[500px] opacity-100 mt-4' : 'max-h-0 opacity-0'
                                                     }`}
                                             >
-                                                <p className="text-zinc-600 dark:text-zinc-400 whitespace-pre-line text-sm leading-relaxed">
+                                                <p className="text-text-secondary whitespace-pre-line text-sm leading-relaxed">
                                                     {position.description}
                                                 </p>
                                                 <div className="flex flex-wrap gap-2 mt-4">
                                                     {position.technologies.map((tech) => (
                                                         <span
                                                             key={tech}
-                                                            className="px-3 py-1 text-xs font-medium bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 text-blue-700 dark:text-blue-300 rounded-full border border-blue-100 dark:border-blue-800/50"
+                                                            className="px-2.5 py-1 text-xs font-medium bg-bg-surface-alt text-text-secondary rounded-md border border-border"
                                                         >
                                                             {tech}
                                                         </span>

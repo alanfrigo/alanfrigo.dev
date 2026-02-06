@@ -33,6 +33,12 @@ My path to software engineering wasn't traditional. I spent years building busin
 Core stack: Python, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
 
 Based in Brazil, working remotely with US companies.`,
+            stats: {
+                yearsExperience: 'Years Experience',
+                companies: 'Companies',
+                technologies: 'Technologies',
+                countries: 'Countries',
+            },
         },
         // Experience Section
         experience: {
@@ -213,6 +219,12 @@ Meu caminho para engenharia de software não foi tradicional. Passei anos constr
 Stack principal: Python, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
 
 Baseado no Brasil, trabalhando remotamente com empresas americanas.`,
+            stats: {
+                yearsExperience: 'Anos de Experiência',
+                companies: 'Empresas',
+                technologies: 'Tecnologias',
+                countries: 'Países',
+            },
         },
         // Experience Section
         experience: {

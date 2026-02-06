@@ -7,11 +7,11 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="py-8 bg-zinc-100 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800">
+        <footer className="py-8 bg-bg-surface-alt border-t border-border">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     {/* Copyright */}
-                    <p className="text-sm text-zinc-500 dark:text-zinc-500">
+                    <p className="text-sm text-text-muted">
                         © {currentYear} Alan Frigo. {t.footer.rights}
                     </p>
 
@@ -22,7 +22,7 @@ export default function Footer() {
                             href="https://linkedin.com/in/alanfrigo"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 text-zinc-500 hover:text-[#0A66C2] dark:hover:text-[#0A66C2] transition-colors duration-300"
+                            className="p-2 text-text-muted hover:text-accent transition-colors duration-200"
                             aria-label="LinkedIn"
                         >
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -30,12 +30,12 @@ export default function Footer() {
                             </svg>
                         </a>
 
-                        {/* GitHub (placeholder) */}
+                        {/* GitHub */}
                         <a
                             href="https://github.com/alanfrigo"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="p-2 text-zinc-500 hover:text-zinc-900 dark:hover:text-white transition-colors duration-300"
+                            className="p-2 text-text-muted hover:text-accent transition-colors duration-200"
                             aria-label="GitHub"
                         >
                             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@ export default function Footer() {
                         </a>
 
                         {/* Language indicator */}
-                        <div className="ml-2 px-2 py-1 text-xs font-medium text-zinc-400 dark:text-zinc-600 border border-zinc-200 dark:border-zinc-700 rounded">
+                        <div className="ml-2 px-2 py-1 text-xs font-medium text-text-muted border border-border rounded-md">
                             {language === 'en' ? '🇺🇸 EN' : '🇧🇷 PT'}
                         </div>
                     </div>

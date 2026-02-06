@@ -10,7 +10,6 @@ export default function Navbar() {
     const [isDark, setIsDark] = useState(false);
 
     useEffect(() => {
-        // Check saved theme or system preference
         const savedTheme = localStorage.getItem('theme');
         let isDarkMode: boolean;
 
@@ -72,7 +71,7 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? 'bg-white/80 dark:bg-zinc-900/80 backdrop-blur-lg shadow-lg'
+                ? 'bg-bg-base/85 backdrop-blur-md border-b border-border-subtle'
                 : 'bg-transparent'
                 }`}
         >
@@ -81,7 +80,7 @@ export default function Navbar() {
                     {/* Logo/Name */}
                     <button
                         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-purple-600 hover:to-blue-600 transition-all duration-300"
+                        className="font-[family-name:var(--font-heading)] font-semibold text-xl text-text-primary hover:text-accent transition-colors duration-200"
                     >
                         Alan Frigo
                     </button>
@@ -92,7 +91,7 @@ export default function Navbar() {
                             <button
                                 key={link.id}
                                 onClick={() => scrollToSection(link.id)}
-                                className="px-4 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg transition-all duration-200"
+                                className="px-3 py-2 text-sm font-medium text-text-muted hover:text-text-primary rounded-md transition-colors duration-200"
                             >
                                 {link.label}
                             </button>
@@ -101,17 +100,17 @@ export default function Navbar() {
                         {/* Language Toggle */}
                         <button
                             onClick={() => setLanguage(language === 'en' ? 'pt' : 'en')}
-                            className="ml-4 flex items-center gap-2 px-3 py-2 text-sm font-medium bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg transition-all duration-200"
+                            className="ml-4 flex items-center gap-2 px-3 py-2 text-sm font-medium bg-bg-surface-alt hover:bg-border rounded-md transition-colors duration-200"
                             aria-label="Toggle language"
                         >
                             <span className="text-lg">{language === 'en' ? '🇺🇸' : '🇧🇷'}</span>
-                            <span className="text-zinc-600 dark:text-zinc-300">{language.toUpperCase()}</span>
+                            <span className="text-text-muted">{language.toUpperCase()}</span>
                         </button>
 
                         {/* Theme Toggle */}
                         <button
                             onClick={toggleTheme}
-                            className="p-2 text-zinc-600 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 rounded-lg transition-all duration-200"
+                            className="p-2 text-text-muted hover:text-text-primary bg-bg-surface-alt hover:bg-border rounded-md transition-colors duration-200"
                             aria-label="Toggle theme"
                         >
                             {isDark ? (
@@ -130,7 +129,7 @@ export default function Navbar() {
                     <div className="md:hidden flex items-center gap-2">
                         <button
                             onClick={toggleTheme}
-                            className="p-2 text-zinc-600 dark:text-zinc-300"
+                            className="p-2 text-text-muted hover:text-text-primary transition-colors duration-200"
                             aria-label="Toggle theme"
                         >
                             {isDark ? (
@@ -152,7 +151,7 @@ export default function Navbar() {
                         </button>
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="p-2 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg"
+                            className="p-2 text-text-muted hover:text-text-primary rounded-md transition-colors duration-200"
                             aria-label="Toggle menu"
                         >
                             <svg
@@ -183,12 +182,12 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden py-4 border-t border-zinc-200 dark:border-zinc-700">
+                    <div className="md:hidden py-4 border-t border-border-subtle">
                         {navLinks.map((link) => (
                             <button
                                 key={link.id}
                                 onClick={() => scrollToSection(link.id)}
-                                className="block w-full text-left px-4 py-3 text-sm font-medium text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800 rounded-lg transition-all duration-200"
+                                className="block w-full text-left px-4 py-3 text-sm font-medium text-text-muted hover:text-text-primary rounded-md transition-colors duration-200"
                             >
                                 {link.label}
                             </button>

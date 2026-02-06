@@ -6,44 +6,39 @@ export default function About() {
     const { t } = useLanguage();
 
     return (
-        <section id="about" className="py-20 sm:py-32 bg-white dark:bg-zinc-950">
+        <section id="about" className="py-20 sm:py-32 bg-bg-base">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-bold text-zinc-900 dark:text-white mb-4">
+                    <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
                         {t.about.title}
                     </h2>
-                    <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full" />
+                    <div className="w-12 h-0.5 bg-accent mx-auto" />
                 </div>
 
                 {/* Content */}
-                <div className="relative">
-                    {/* Decorative elements */}
-                    <div className="absolute -left-4 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-600 via-purple-600 to-blue-600 rounded-full opacity-20" />
-
-                    <div className="pl-8">
-                        <p className="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 leading-relaxed whitespace-pre-line">
-                            {t.about.description}
-                        </p>
-                    </div>
+                <div className="border-l-2 border-accent/20 pl-8">
+                    <p className="text-lg sm:text-xl text-text-secondary leading-relaxed whitespace-pre-line">
+                        {t.about.description}
+                    </p>
                 </div>
 
                 {/* Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
                     {[
-                        { value: '9+', label: 'Years Experience' },
-                        { value: '6', label: 'Companies' },
-                        { value: '20+', label: 'Technologies' },
-                        { value: '2', label: 'Countries' },
+                        { value: '9+', label: t.about.stats.yearsExperience },
+                        { value: '6', label: t.about.stats.companies },
+                        { value: '20+', label: t.about.stats.technologies },
+                        { value: '2', label: t.about.stats.countries },
                     ].map((stat, index) => (
                         <div
                             key={index}
-                            className="text-center p-6 bg-zinc-50 dark:bg-zinc-900 rounded-2xl border border-zinc-100 dark:border-zinc-800 hover:border-blue-500/50 dark:hover:border-blue-500/50 transition-all duration-300"
+                            className="text-center p-5 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200"
                         >
-                            <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                            <div className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-accent">
                                 {stat.value}
                             </div>
-                            <div className="text-sm text-zinc-500 dark:text-zinc-500 mt-2">
+                            <div className="text-sm text-text-muted mt-2">
                                 {stat.label}
                             </div>
                         </div>
