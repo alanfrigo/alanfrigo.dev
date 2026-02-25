@@ -145,6 +145,12 @@ Developed effective sales funnels and newsletter campaigns that improved custome
         education: {
             title: 'Education',
             degrees: {
+                mba2: {
+                    school: 'UTFPR',
+                    degree: 'Master of Business Administration',
+                    field: 'Software Engineering',
+                    period: 'Expected December 2027',
+                },
                 mba: {
                     school: 'Estácio',
                     degree: 'Master of Business Administration',
@@ -331,6 +337,12 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
         education: {
             title: 'Formação',
             degrees: {
+                mba2: {
+                    school: 'UTFPR',
+                    degree: 'MBA',
+                    field: 'Engenharia de Software',
+                    period: 'Previsão Dezembro 2027',
+                },
                 mba: {
                     school: 'Estácio',
                     degree: 'MBA',

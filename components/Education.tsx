@@ -7,6 +7,11 @@ export default function Education() {
 
     const degrees = [
         {
+            key: 'mba2' as const,
+            icon: '🎓',
+            inProgress: true,
+        },
+        {
             key: 'mba' as const,
             icon: '🎓',
             inProgress: true,
