@@ -63,6 +63,29 @@ export default function RootLayout({
             `,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                document.addEventListener('DOMContentLoaded', function() {
+                  var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                      if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        if (entry.target.querySelector('.text-reveal-content')) {
+                          entry.target.classList.add('reveal-active');
+                        }
+                      }
+                    });
+                  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+                  document.querySelectorAll('.reveal').forEach(function(el) {
+                    observer.observe(el);
+                  });
+                });
+              })();
+            `,
+          }}
+        />
       </head>
       <body className={`${dmSans.variable} ${spaceGrotesk.variable} antialiased`}>
         <LanguageProvider>

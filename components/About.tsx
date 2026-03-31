@@ -9,7 +9,8 @@ export default function About() {
         <section id="about" className="py-20 sm:py-32 bg-bg-base">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-12 reveal">
+                    <p className="section-label mb-3">01 / {t.about.title}</p>
                     <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
                         {t.about.title}
                     </h2>
@@ -17,7 +18,7 @@ export default function About() {
                 </div>
 
                 {/* Content */}
-                <div className="border-l-2 border-accent/20 pl-8">
+                <div className="border-l-2 border-accent/20 pl-8 reveal delay-200">
                     <p className="text-lg sm:text-xl text-text-secondary leading-relaxed whitespace-pre-line">
                         {t.about.description}
                     </p>
@@ -33,7 +34,7 @@ export default function About() {
                     ].map((stat, index) => (
                         <div
                             key={index}
-                            className="text-center p-5 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200"
+                            className={`reveal delay-${(index + 1) * 100} text-center p-5 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200`}
                         >
                             <div className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-accent">
                                 {stat.value}

@@ -73,7 +73,8 @@ export default function Certifications() {
         <section id="certifications" className="py-20 sm:py-32 bg-bg-base">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-16 reveal">
+                    <p className="section-label mb-3">05 / {title}</p>
                     <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
                         {title}
                     </h2>
@@ -85,7 +86,7 @@ export default function Certifications() {
                     {certifications.map((cert, index) => (
                         <div
                             key={index}
-                            className="p-6 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 group"
+                            className="reveal p-6 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 group"
                         >
                             {/* Icon and Title */}
                             <div className="flex items-start gap-4 mb-4">

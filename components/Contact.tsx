@@ -6,21 +6,28 @@ export default function Contact() {
     const { t } = useLanguage();
 
     return (
-        <section id="contact" className="py-20 sm:py-32 bg-bg-base">
-            <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                {/* Section Header */}
-                <div className="mb-12">
-                    <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
+        <section id="contact" className="py-24 sm:py-40 bg-bg-base">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                {/* Section label */}
+                <div className="reveal mb-6">
+                    <p className="section-label">07 / {t.contact.title}</p>
+                </div>
+
+                {/* Editorial large heading */}
+                <div className="reveal delay-100 mb-14">
+                    <h2 className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl md:text-7xl text-text-primary tracking-tight leading-tight">
                         {t.contact.title}
                     </h2>
-                    <div className="w-12 h-0.5 bg-accent mx-auto mb-6" />
-                    <p className="text-lg text-text-secondary">
+                    <p className="text-xl text-text-secondary mt-5 max-w-xl leading-relaxed">
                         {t.contact.subtitle}
                     </p>
                 </div>
 
+                {/* Divider */}
+                <div className="reveal delay-200 w-full h-px bg-border mb-14" />
+
                 {/* Contact Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="reveal delay-300 flex flex-col sm:flex-row gap-4">
                     {/* LinkedIn */}
                     <a
                         href="https://linkedin.com/in/alanfrigo"
@@ -59,8 +66,8 @@ export default function Contact() {
                     </a>
                 </div>
 
-                {/* Additional info */}
-                <div className="mt-16 pt-8 border-t border-border">
+                {/* Location info */}
+                <div className="reveal delay-400 mt-12 pt-8 border-t border-border">
                     <p className="text-text-muted text-sm">
                         📍 Curitiba, Brazil • 🌐 Remote Friendly
                     </p>

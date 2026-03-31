@@ -60,9 +60,9 @@ export default function Navbar() {
 
     const navLinks = [
         { id: 'about', label: t.nav.about },
+        { id: 'projects', label: projectsLabel },
         { id: 'experience', label: t.nav.experience },
         { id: 'skills', label: t.nav.skills },
-        { id: 'projects', label: projectsLabel },
         { id: 'certifications', label: certificationsLabel },
         { id: 'education', label: t.nav.education },
         { id: 'contact', label: t.nav.contact },
@@ -71,7 +71,7 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                ? 'bg-bg-base/85 backdrop-blur-md border-b border-border-subtle'
+                ? 'nav-scrolled'
                 : 'bg-transparent'
                 }`}
         >
@@ -182,7 +182,7 @@ export default function Navbar() {
 
                 {/* Mobile Menu */}
                 {isMobileMenuOpen && (
-                    <div className="md:hidden py-4 border-t border-border-subtle">
+                    <div className="md:hidden py-4 border-t border-border-subtle bg-bg-base/95">
                         {navLinks.map((link) => (
                             <button
                                 key={link.id}

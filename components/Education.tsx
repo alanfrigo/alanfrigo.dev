@@ -27,7 +27,8 @@ export default function Education() {
         <section id="education" className="py-20 sm:py-32 bg-bg-surface-alt">
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-16 reveal">
+                    <p className="section-label mb-3">06 / {t.education.title}</p>
                     <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
                         {t.education.title}
                     </h2>
@@ -42,7 +43,7 @@ export default function Education() {
                         return (
                             <div
                                 key={key}
-                                className="relative p-6 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 group"
+                                className="reveal relative p-6 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 group"
                             >
                                 {/* In Progress Badge */}
                                 {inProgress && (

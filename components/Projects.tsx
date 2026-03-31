@@ -25,7 +25,8 @@ export default function Projects() {
         <section id="projects" className="py-20 sm:py-32 bg-bg-surface-alt">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Section Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-16 reveal">
+                    <p className="section-label mb-3">02 / {t.projects.title}</p>
                     <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
                         {t.projects.title}
                     </h2>
@@ -40,7 +41,7 @@ export default function Projects() {
                         return (
                             <div
                                 key={project.key}
-                                className="group bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 overflow-hidden"
+                                className="reveal group bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 overflow-hidden"
                             >
                                 <div className="relative p-6 sm:p-8">
                                     <div className="flex flex-col sm:flex-row gap-6 items-start">

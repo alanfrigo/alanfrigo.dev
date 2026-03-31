@@ -7,13 +7,18 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="py-8 bg-bg-surface-alt border-t border-border">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <footer className="bg-bg-surface-alt border-t border-border overflow-hidden">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                     {/* Copyright */}
-                    <p className="text-sm text-text-muted">
-                        © {currentYear} Alan Frigo. {t.footer.rights}
-                    </p>
+                    <div>
+                        <p className="font-[family-name:var(--font-heading)] font-semibold text-text-primary mb-1">
+                            Alan Frigo
+                        </p>
+                        <p className="text-sm text-text-muted">
+                            © {currentYear} Alan Frigo. {t.footer.rights}
+                        </p>
+                    </div>
 
                     {/* Social Links */}
                     <div className="flex items-center gap-4">
@@ -49,6 +54,11 @@ export default function Footer() {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            {/* AURA-style large wordmark */}
+            <div className="footer-wordmark-wrapper flex justify-center overflow-hidden">
+                <span className="footer-wordmark">ALAN FRIGO</span>
             </div>
         </footer>
     );

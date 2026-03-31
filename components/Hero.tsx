@@ -1,10 +1,19 @@
 'use client';
 
 import Image from 'next/image';
+import { useEffect, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function Hero() {
     const { t } = useLanguage();
+    const titleRef = useRef<HTMLHeadingElement>(null);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            titleRef.current?.classList.add('reveal-active');
+        }, 300);
+        return () => clearTimeout(timer);
+    }, []);
 
     const scrollToContact = () => {
         const element = document.getElementById('contact');
@@ -14,11 +23,21 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-bg-base">
+        <section className="relative min-h-screen flex items-center justify-center bg-bg-base overflow-hidden">
+            {/* Floating decorative rings */}
+            <div
+                className="float-element pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] rounded-full border border-accent/10"
+                aria-hidden="true"
+            />
+            <div
+                className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] h-[340px] rounded-full border border-accent/[0.08]"
+                aria-hidden="true"
+            />
+
             {/* Content */}
             <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 {/* Avatar */}
-                <div className="mb-8 flex justify-center">
+                <div className="mb-4 flex justify-center animate-fade-in">
                     <div className="w-32 h-32 sm:w-36 sm:h-36 rounded-full ring-2 ring-accent/40 ring-offset-4 ring-offset-bg-base overflow-hidden">
                         <Image
                             src="/profile-pic.jpeg"
@@ -32,13 +51,18 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* Name */}
-                <h1 className="font-[family-name:var(--font-heading)] text-4xl sm:text-5xl md:text-6xl text-text-primary mb-4 animate-fade-in">
-                    Alan Frigo
+                {/* Name — masked text reveal */}
+                <h1
+                    ref={titleRef}
+                    className="font-[family-name:var(--font-heading)] text-5xl sm:text-7xl md:text-8xl text-text-primary mb-4 tracking-tight leading-none"
+                >
+                    <span className="text-reveal-wrapper">
+                        <span className="mb-4 text-reveal-content delay-100">Alan Frigo</span>
+                    </span>
                 </h1>
 
                 {/* Role */}
-                <p className="text-lg sm:text-xl text-accent font-medium mb-6 animate-fade-in-delayed tracking-wide">
+                <p className="text-base sm:text-lg text-accent font-semibold mb-6 animate-fade-in-delayed tracking-widest uppercase">
                     {t.hero.role}
                 </p>
 
