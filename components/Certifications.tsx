@@ -9,10 +9,82 @@ interface Certification {
     date: string;
     credentialUrl: string;
     skills: string[];
-    icon: 'asimov' | 'aws';
+    icon: 'asimov' | 'aws' | 'databricks';
 }
 
 const certifications: Certification[] = [
+    {
+        name: 'Academy Accreditation - AI Agent Fundamentals',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/b0f0aa2a-fc06-469b-a08b-0cef217a446d',
+        skills: ['AI Agents', 'Generative AI', 'Databricks'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Academy Accreditation - Generative AI Fundamentals',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/a779a3a0-0600-465a-860a-d3bf6d0de2a6',
+        skills: ['Generative AI', 'LLMs', 'Databricks'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Academy Accreditation - Databricks Fundamentals',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/2eb59fc4-0f82-4764-a809-b52a5832bb72',
+        skills: ['Databricks', 'Lakehouse', 'Data Engineering'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Knowledge Badge - Building Retrieval Agents On Databricks',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/83aa3d15-702a-4aa8-9b85-ceb2c52e659d',
+        skills: ['RAG', 'AI Agents', 'Databricks'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Knowledge Badge - Building Single-Agent Applications on Databricks',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/5a6ea635-58d8-4baf-8740-bd401b80186e',
+        skills: ['AI Agents', 'Generative AI', 'Databricks'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Knowledge Badge - Generative AI Application Deployment and Monitoring',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/b2c1c288-1684-4c9f-a826-98c4f8ee662e',
+        skills: ['Generative AI', 'Deployment', 'Monitoring'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Knowledge Badge - Generative AI Application Evaluation and Governance',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/3bbc590a-327e-407d-aaa6-3fd313f93a45',
+        skills: ['Generative AI', 'Evaluation', 'Governance'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Knowledge Badge - AI/BI for Data Analysts',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/753cd5ec-6bb2-4fe0-8694-3f7b3b94fad2',
+        skills: ['AI/BI', 'Genie', 'Analytics'],
+        icon: 'databricks',
+    },
+    {
+        name: 'Partner Training - Azure Databricks Foundations',
+        issuer: 'Databricks Academy',
+        date: 'Jun 2026',
+        credentialUrl: 'https://credentials.databricks.com/1cf4bd7a-cb44-4f68-8665-eba037fc1f9c',
+        skills: ['Azure Databricks', 'Data Engineering', 'Cloud'],
+        icon: 'databricks',
+    },
     {
         name: 'AI Agent Engineer',
         issuer: 'Asimov Academy',
@@ -62,6 +134,27 @@ function AWSIcon() {
     );
 }
 
+function DatabricksIcon() {
+    return (
+        <div className="w-12 h-12 bg-bg-surface rounded-lg flex items-center justify-center p-2 border border-border">
+            <Image
+                src="/databricks-mark.png"
+                alt="Databricks"
+                width={32}
+                height={32}
+                className="w-full h-full object-contain"
+                unoptimized
+            />
+        </div>
+    );
+}
+
+function CertIcon({ icon }: { icon: Certification['icon'] }) {
+    if (icon === 'asimov') return <AsimovIcon />;
+    if (icon === 'databricks') return <DatabricksIcon />;
+    return <AWSIcon />;
+}
+
 export default function Certifications() {
     const { language } = useLanguage();
 
@@ -90,7 +183,7 @@ export default function Certifications() {
                         >
                             {/* Icon and Title */}
                             <div className="flex items-start gap-4 mb-4">
-                                {cert.icon === 'asimov' ? <AsimovIcon /> : <AWSIcon />}
+                                <CertIcon icon={cert.icon} />
                                 <div className="flex-1">
                                     <h3 className="text-lg font-semibold text-text-primary group-hover:text-accent transition-colors duration-200">
                                         {cert.name}

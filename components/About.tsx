@@ -28,7 +28,7 @@ export default function About() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
                     {[
                         { value: '9+', label: t.about.stats.yearsExperience },
-                        { value: '6', label: t.about.stats.companies },
+                        { value: '7', label: t.about.stats.companies },
                         { value: '20+', label: t.about.stats.technologies },
                         { value: '2', label: t.about.stats.countries },
                     ].map((stat, index) => (

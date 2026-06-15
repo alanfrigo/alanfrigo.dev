@@ -16,23 +16,23 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Alan Frigo | Software Engineer",
-  description: "Software Engineer specializing in AI, cloud infrastructure, and modern web technologies. Building scalable solutions with NextJS, Python, AWS, and more.",
-  keywords: ["Software Engineer", "Full Stack Developer", "AI", "NextJS", "Python", "AWS", "React", "Cloud Infrastructure"],
+  title: "Alan Frigo | AI Engineer",
+  description: "AI Engineer building multi-agent systems and AI solutions with Databricks, LangChain, Python, and NextJS. Full Stack Engineer and AI Lead shipping scalable products.",
+  keywords: ["AI Engineer", "Full Stack Developer", "AI Agents", "Databricks", "LangChain", "NextJS", "Python", "AWS", "Multi-Agent Systems"],
   authors: [{ name: "Alan Frigo" }],
   creator: "Alan Frigo",
   openGraph: {
     type: "website",
     locale: "en_US",
     alternateLocale: "pt_BR",
-    title: "Alan Frigo | Software Engineer",
-    description: "Software Engineer specializing in AI, cloud infrastructure, and modern web technologies.",
+    title: "Alan Frigo | AI Engineer",
+    description: "AI Engineer building multi-agent systems with Databricks, LangChain, and Python.",
     siteName: "Alan Frigo Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alan Frigo | Software Engineer",
-    description: "Software Engineer specializing in AI, cloud infrastructure, and modern web technologies.",
+    title: "Alan Frigo | AI Engineer",
+    description: "AI Engineer building multi-agent systems with Databricks, LangChain, and Python.",
   },
   robots: {
     index: true,

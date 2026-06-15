@@ -14,7 +14,7 @@ export const translations = {
         },
         // Hero Section
         hero: {
-            role: 'Software Engineer | Python | NextJS | LangChain | Agno | N8N',
+            role: 'AI Engineer | Python | Databricks | LangChain | Agno | NextJS',
             tagline: 'Full Stack Engineer and AI Lead building scalable applications with Python, NextJS, and cloud infrastructure.',
             cta: {
                 contact: 'Get in Touch',
@@ -26,11 +26,11 @@ export const translations = {
             title: 'About Me',
             description: `Full Stack Engineer and AI Lead building scalable applications with Python, NextJS, and cloud infrastructure.
 
-Currently leading a development team at IndominusAI, where I architect AI agents, multi-agent systems, and machine learning solutions. My day-to-day involves hands-on coding alongside technical decisions from database design to AWS infrastructure (EC2, RDS, SQS, S3) to deployment pipelines.
+Currently working as an AI Engineer, architecting multi-agent systems and AI solutions for real-world business problems with Databricks, LangChain, and Python. My day-to-day involves hands-on coding alongside technical decisions from agent architecture to cloud infrastructure to deployment pipelines.
 
 My path to software engineering wasn't traditional. I spent years building businesses, WordPress development, SEO strategy, marketing automation with N8N. That background taught me to think beyond code: understanding users, measuring impact, and shipping things that actually solve problems.
 
-Core stack: Python, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
+Core stack: Python, Databricks, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
 
 Based in Brazil, working remotely with US companies.`,
             stats: {
@@ -45,10 +45,21 @@ Based in Brazil, working remotely with US companies.`,
             title: 'Experience',
             present: 'Present',
             positions: {
+                db: {
+                    company: 'DB',
+                    role: 'Artificial Intelligence Engineer',
+                    period: 'April 2026 - Present',
+                    location: 'Brazil',
+                    description: `Working on solutions that integrate Artificial Intelligence to solve real-world business problems. Currently assigned to a major client in the retail sector.
+
+Projects I have developed:
+- Multi-agent system for detecting inconsistencies in payment orders, including potential fraud.`,
+                    technologies: ['Databricks', 'Databricks Agents & Genie', 'LangChain', 'Python'],
+                },
                 indominusAI: {
                     company: 'IndominusAI',
                     role: 'Head of Artificial Intelligence',
-                    period: 'July 2025 - Present',
+                    period: 'June 2025 - April 2026',
                     location: 'São Paulo, Brazil',
                     description: `Leading a development team building AI-powered applications, balancing hands-on coding with architecture decisions and technical mentorship.
 
@@ -206,7 +217,7 @@ Developed effective sales funnels and newsletter campaigns that improved custome
         },
         // Hero Section
         hero: {
-            role: 'Engenheiro de Software | Python | NextJS | LangChain | Agno | N8N',
+            role: 'Engenheiro de IA | Python | Databricks | LangChain | Agno | NextJS',
             tagline: 'Engenheiro Full Stack e AI Lead construindo aplicações escaláveis com Python, NextJS e infraestrutura em nuvem.',
             cta: {
                 contact: 'Entre em Contato',
@@ -218,11 +229,11 @@ Developed effective sales funnels and newsletter campaigns that improved custome
             title: 'Sobre Mim',
             description: `Engenheiro Full Stack e AI Lead construindo aplicações escaláveis com Python, NextJS e infraestrutura em nuvem.
 
-Atualmente liderando uma equipe de desenvolvimento na IndominusAI, onde arquiteto agentes de IA, sistemas multi-agentes e soluções de machine learning. Meu dia-a-dia envolve codificação hands-on junto com decisões técnicas desde design de banco de dados até infraestrutura AWS (EC2, RDS, SQS, S3) e pipelines de deploy.
+Atualmente atuando como Engenheiro de IA, arquitetando sistemas multi-agentes e soluções de IA para problemas reais de negócio com Databricks, LangChain e Python. Meu dia-a-dia envolve codificação hands-on junto com decisões técnicas desde arquitetura de agentes até infraestrutura em nuvem e pipelines de deploy.
 
 Meu caminho para engenharia de software não foi tradicional. Passei anos construindo negócios, desenvolvimento WordPress, estratégia de SEO, automação de marketing com N8N. Esse background me ensinou a pensar além do código: entender usuários, medir impacto e entregar coisas que realmente resolvem problemas.
 
-Stack principal: Python, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
+Stack principal: Python, Databricks, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
 
 Baseado no Brasil, trabalhando remotamente com empresas americanas.`,
             stats: {
@@ -237,10 +248,21 @@ Baseado no Brasil, trabalhando remotamente com empresas americanas.`,
             title: 'Experiência',
             present: 'Presente',
             positions: {
+                db: {
+                    company: 'DB',
+                    role: 'Engenheiro de Inteligência Artificial',
+                    period: 'Abril 2026 - Presente',
+                    location: 'Brasil',
+                    description: `Trabalhando em soluções que integram Inteligência Artificial para resolver problemas reais de negócio. Atualmente alocado em um grande cliente do setor de varejo.
+
+Projetos que desenvolvi:
+- Sistema multi-agente para detecção de inconsistências em ordens de pagamento, incluindo potenciais fraudes.`,
+                    technologies: ['Databricks', 'Databricks Agents & Genie', 'LangChain', 'Python'],
+                },
                 indominusAI: {
                     company: 'IndominusAI',
                     role: 'Head de Inteligência Artificial',
-                    period: 'Julho 2025 - Presente',
+                    period: 'Junho 2025 - Abril 2026',
                     location: 'São Paulo, Brasil',
                     description: `Liderando uma equipe de desenvolvimento construindo aplicações com IA, equilibrando codificação hands-on com decisões de arquitetura e mentoria técnica.
 
@@ -393,7 +415,7 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
 export const skillsData = {
     frontend: ['React', 'NextJS', 'TypeScript', 'WordPress', 'Elementor', 'Tailwind CSS'],
     backend: ['Python', 'Node.js', 'Supabase', 'PostgreSQL'],
-    ai: ['Agno', 'LangChain', 'OpenAI API', 'AI Agents', 'Multi-Agent Systems'],
+    ai: ['Databricks', 'Agno', 'LangChain', 'OpenAI API', 'AI Agents', 'Multi-Agent Systems', 'RAG'],
     infrastructure: ['AWS (EC2, RDS, SES, SQS, S3)', 'Vercel', 'Railway', 'Docker', 'OVHCloud', 'Cloudflare R2'],
     automation: ['N8N', 'WhatsApp API', 'Webhooks', 'CI/CD'],
     marketing: ['SEO', 'SEMRUSH', 'AHREFS', 'Google Analytics', 'Matomo', 'Facebook Ads'],

@@ -3,9 +3,10 @@
 import { useState, useEffect, useRef } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 
-type PositionKey = 'indominusAI' | 'pixelPeninsula' | 'at2eEngineer' | 'at2eDev' | 'apolloPodcasts' | 'rocketJump' | 'rebbel';
+type PositionKey = 'db' | 'indominusAI' | 'pixelPeninsula' | 'at2eEngineer' | 'at2eDev' | 'apolloPodcasts' | 'rocketJump' | 'rebbel';
 
 const positionOrder: PositionKey[] = [
+    'db',
     'indominusAI',
     'pixelPeninsula',
     'at2eEngineer',
@@ -17,8 +18,8 @@ const positionOrder: PositionKey[] = [
 
 export default function Experience() {
     const { t } = useLanguage();
-    const [revealed, setRevealed] = useState<Set<PositionKey>>(new Set(['indominusAI']));
-    const [expanded, setExpanded] = useState<Set<PositionKey>>(new Set(['indominusAI']));
+    const [revealed, setRevealed] = useState<Set<PositionKey>>(new Set(['db']));
+    const [expanded, setExpanded] = useState<Set<PositionKey>>(new Set(['db']));
     const entryRefs = useRef<Partial<Record<PositionKey, HTMLDivElement | null>>>({});
 
     useEffect(() => {
