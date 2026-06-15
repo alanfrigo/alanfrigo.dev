@@ -11,6 +11,7 @@ export default function Marquee() {
         // Backend & Infrastructure
         'Python',
         'FastAPI',
+        'Databricks',
         'PostgreSQL',
         'Supabase',
         'Docker',
