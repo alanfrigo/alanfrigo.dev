@@ -191,6 +191,11 @@ Developed effective sales funnels and newsletter campaigns that improved custome
                     description: 'Intelligent Meeting Assistant. Automatically record and transcribe your Google Meet & Zoom meetings. Self-hosted and open source.',
                     features: ['Google Calendar Sync', 'Auto-Join Bot', 'HD Recording', 'AI Transcription', 'Speaker ID', 'Full-Text Search'],
                 },
+                brain: {
+                    name: 'BRAIN',
+                    description: 'Personal knowledge base with RAG chat. Turns an Obsidian vault into a navigable docs site and answers questions over your notes with cited sources. Self-hosted and open source.',
+                    features: ['RAG Chat with Citations', 'Hybrid Search (BM25 + Vectors)', 'Obsidian Vault Rendering', 'Interactive Graph View', 'Streaming Responses', 'GitHub OAuth'],
+                },
             },
         },
         // Contact Section
@@ -393,6 +398,11 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
                     name: 'RKJ.AI',
                     description: 'Assistente de Reuniões Inteligente. Grava e transcreve automaticamente suas reuniões do Google Meet e Zoom. Self-hosted e open source.',
                     features: ['Sincronização Google Calendar', 'Bot de Entrada Automática', 'Gravação HD', 'Transcrição com IA', 'Identificação de Falantes', 'Busca Full-Text'],
+                },
+                brain: {
+                    name: 'BRAIN',
+                    description: 'Base de conhecimento pessoal com chat RAG. Transforma um vault do Obsidian em um site de documentação navegável e responde perguntas sobre suas notas com fontes citadas. Self-hosted e open source.',
+                    features: ['Chat RAG com Citações', 'Busca Híbrida (BM25 + Vetores)', 'Renderização do Vault Obsidian', 'Visualização em Grafo Interativo', 'Respostas em Streaming', 'GitHub OAuth'],
                 },
             },
         },

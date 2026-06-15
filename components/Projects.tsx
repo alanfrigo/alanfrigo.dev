@@ -18,6 +18,12 @@ export default function Projects() {
             logo: '/logo-supapanel.png',
             technologies: ['Next.js 15', 'TypeScript', 'Tailwind CSS', 'Prisma', 'PostgreSQL', 'Docker', 'Traefik'],
             githubUrl: 'https://github.com/alanfrigo/SupaPanel',
+        },
+        {
+            key: 'brain',
+            logo: '/brain-logo.svg',
+            technologies: ['Next.js 15', 'FastAPI', 'Python', 'LangChain', 'Voyage AI', 'ChromaDB', 'OpenRouter', 'Docker'],
+            githubUrl: 'https://github.com/alanfrigo/brain',
         }
     ];
 
