@@ -6,71 +6,59 @@ export default function Contact() {
     const { t } = useLanguage();
 
     return (
-        <section id="contact" className="py-24 sm:py-40 bg-bg-base">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section label */}
-                <div className="reveal mb-6">
-                    <p className="section-label">07 / {t.contact.title}</p>
+        <section
+            id="contact"
+            className="bg-bg-surface-alt border-t border-border"
+            style={{ padding: 'clamp(90px,14vh,160px) clamp(18px,5vw,60px)' }}
+        >
+            <div className="reveal mx-auto text-center" style={{ maxWidth: '760px' }}>
+                <div className="font-[family-name:var(--font-mono)] text-accent text-[14px] mb-5">
+                    $ ./connect.sh
                 </div>
+                <h2
+                    className="font-[family-name:var(--font-heading)] text-text-primary font-bold m-0 mb-[18px]"
+                    style={{ fontSize: 'clamp(34px,6vw,68px)', letterSpacing: '-0.03em', lineHeight: 1.02 }}
+                >
+                    {t.contact.title}
+                </h2>
+                <p
+                    className="text-text-secondary mx-auto mb-10"
+                    style={{ fontSize: 'clamp(16px,2vw,19px)', lineHeight: 1.6, maxWidth: '30em' }}
+                >
+                    {t.contact.subtitle}
+                </p>
 
-                {/* Editorial large heading */}
-                <div className="reveal delay-100 mb-14">
-                    <h2 className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl md:text-7xl text-text-primary tracking-tight leading-tight">
-                        {t.contact.title}
-                    </h2>
-                    <p className="text-xl text-text-secondary mt-5 max-w-xl leading-relaxed">
-                        {t.contact.subtitle}
-                    </p>
-                </div>
-
-                {/* Divider */}
-                <div className="reveal delay-200 w-full h-px bg-border mb-14" />
-
-                {/* Contact Buttons */}
-                <div className="reveal delay-300 flex flex-col sm:flex-row gap-4">
-                    {/* LinkedIn */}
+                <div className="flex flex-wrap gap-[14px] justify-center">
+                    {/* LinkedIn — solid */}
                     <a
                         href="https://linkedin.com/in/alanfrigo"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 px-7 py-3.5 bg-[#0A66C2] hover:bg-[#004182] text-white font-medium rounded-lg transition-colors duration-200"
+                        className="inline-flex items-center gap-[10px] font-semibold text-[15px] text-[var(--bg)] bg-accent border border-accent rounded-[11px] px-6 py-[14px] transition-[transform,box-shadow,background] duration-200 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_14px_30px_-10px_var(--glow)]"
                     >
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-                        </svg>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.99H5.67v8.35h2.67zM7 8.82a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zm11.34 9.52v-4.58c0-2.45-1.31-3.59-3.06-3.59-1.41 0-2.04.78-2.39 1.32v-1.13h-2.67c.04.75 0 8.35 0 8.35h2.67v-4.66c0-.24.02-.48.09-.65.19-.48.63-.98 1.37-.98.97 0 1.36.74 1.36 1.81v4.48h2.63z" /></svg>
                         {t.contact.linkedin}
                     </a>
 
-                    {/* Email */}
+                    {/* Email — outline */}
                     <a
                         href="mailto:alanfrigo@gmail.com"
-                        className="flex items-center justify-center gap-3 px-7 py-3.5 bg-accent hover:bg-accent-hover text-white font-medium rounded-lg transition-colors duration-200"
+                        className="inline-flex items-center gap-[10px] font-semibold text-[15px] text-text-primary bg-transparent border border-border-bright rounded-[11px] px-[22px] py-[14px] transition-[border-color,color,transform] duration-200 hover:border-accent hover:text-accent hover:-translate-y-0.5"
                     >
-                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
                         {t.contact.email}
                     </a>
 
-                    {/* WhatsApp */}
+                    {/* WhatsApp — outline */}
                     <a
                         href="https://wa.me/5545991073901"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center gap-3 px-7 py-3.5 bg-[#25D366] hover:bg-[#128C7E] text-white font-medium rounded-lg transition-colors duration-200"
+                        className="inline-flex items-center gap-[10px] font-semibold text-[15px] text-text-primary bg-transparent border border-border-bright rounded-[11px] px-[22px] py-[14px] transition-[border-color,color,transform] duration-200 hover:border-accent hover:text-accent hover:-translate-y-0.5"
                     >
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                        </svg>
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.33A10 10 0 1 0 12 2zm0 18.13a8.13 8.13 0 0 1-4.14-1.13l-.3-.18-3 .79.8-2.92-.2-.3A8.13 8.13 0 1 1 12 20.13zm4.46-6.1c-.24-.12-1.45-.71-1.67-.8-.22-.08-.39-.12-.55.13-.16.24-.63.79-.78.96-.14.16-.29.18-.53.06a6.66 6.66 0 0 1-3.27-2.86c-.25-.43.25-.4.71-1.32.08-.16.04-.3-.02-.42-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2.01 0 1.18.86 2.32.98 2.48.12.16 1.69 2.58 4.1 3.62 1.53.66 2.13.71 2.9.6.46-.07 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.46-.28z" /></svg>
                         {t.contact.whatsapp}
                     </a>
-                </div>
-
-                {/* Location info */}
-                <div className="reveal delay-400 mt-12 pt-8 border-t border-border">
-                    <p className="text-text-muted text-sm">
-                        📍 Curitiba, Brazil • 🌐 Remote Friendly
-                    </p>
                 </div>
             </div>
         </section>

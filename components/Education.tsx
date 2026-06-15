@@ -2,72 +2,46 @@
 
 import { useLanguage } from '@/context/LanguageContext';
 
+const order = ['mba2', 'mba', 'bachelor'] as const;
+
 export default function Education() {
     const { t } = useLanguage();
 
-    const degrees = [
-        {
-            key: 'mba2' as const,
-            icon: '🎓',
-            inProgress: true,
-        },
-        {
-            key: 'mba' as const,
-            icon: '🎓',
-            inProgress: true,
-        },
-        {
-            key: 'bachelor' as const,
-            icon: '📚',
-            inProgress: false,
-        },
-    ];
-
     return (
-        <section id="education" className="py-20 sm:py-32 bg-bg-surface-alt">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
-                <div className="text-center mb-16 reveal">
-                    <p className="section-label mb-3">06 / {t.education.title}</p>
-                    <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
+        <section id="education" style={{ padding: 'clamp(80px,12vh,140px) clamp(18px,5vw,60px)' }}>
+            <div className="mx-auto" style={{ maxWidth: '1180px' }}>
+                {/* Header */}
+                <div className="reveal mb-[46px]">
+                    <div className="font-[family-name:var(--font-mono)] text-accent text-[13px] tracking-[0.1em] mb-3">
+                        06 // education
+                    </div>
+                    <h2
+                        className="font-[family-name:var(--font-heading)] text-text-primary font-semibold m-0"
+                        style={{ fontSize: 'clamp(30px,4.6vw,52px)', letterSpacing: '-0.02em' }}
+                    >
                         {t.education.title}
                     </h2>
-                    <div className="w-12 h-0.5 bg-accent mx-auto" />
                 </div>
 
-                {/* Education Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {degrees.map(({ key, icon, inProgress }) => {
-                        const degree = t.education.degrees[key];
-
+                {/* Grid */}
+                <div className="grid gap-[18px]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))' }}>
+                    {order.map((key) => {
+                        const edu = t.education.degrees[key];
                         return (
                             <div
                                 key={key}
-                                className="reveal relative p-6 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 group"
+                                className="reveal bg-bg-surface border border-border rounded-[14px] p-[26px] transition-[border-color] duration-200 hover:border-[var(--accent-line)]"
                             >
-                                {/* In Progress Badge */}
-                                {inProgress && (
-                                    <div className="absolute -top-3 -right-3 px-3 py-1 bg-accent text-white text-xs font-medium rounded-md">
-                                        In Progress
-                                    </div>
-                                )}
-
-                                <div className="flex items-start gap-4">
-                                    <div className="text-4xl">{icon}</div>
-                                    <div className="flex-1">
-                                        <h3 className="text-xl font-semibold text-text-primary group-hover:text-accent transition-colors duration-200">
-                                            {degree.degree}
-                                        </h3>
-                                        <p className="text-accent font-medium mt-1">
-                                            {degree.field}
-                                        </p>
-                                        <p className="text-text-secondary mt-2">
-                                            {degree.school}
-                                        </p>
-                                        <p className="text-sm text-text-muted mt-1">
-                                            {degree.period}
-                                        </p>
-                                    </div>
+                                <div className="font-[family-name:var(--font-mono)] text-[12px] text-accent mb-[14px]">
+                                    {edu.period}
+                                </div>
+                                <h3 className="font-[family-name:var(--font-heading)] text-[20px] font-semibold text-text-primary m-0 mb-[6px]">
+                                    {edu.degree}
+                                </h3>
+                                <div className="text-[15px] text-text-secondary mb-[10px]">{edu.field}</div>
+                                <div className="inline-flex items-center gap-2 text-[14px] text-text-muted">
+                                    <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+                                    {edu.school}
                                 </div>
                             </div>
                         );

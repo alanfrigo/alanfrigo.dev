@@ -163,50 +163,54 @@ export default function Certifications() {
     const skillsLabel = language === 'en' ? 'Skills' : 'Habilidades';
 
     return (
-        <section id="certifications" className="py-20 sm:py-32 bg-bg-base">
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
-                <div className="text-center mb-16 reveal">
-                    <p className="section-label mb-3">05 / {title}</p>
-                    <h2 className="font-[family-name:var(--font-heading)] text-3xl sm:text-4xl text-text-primary mb-3">
+        <section
+            id="certifications"
+            className="bg-bg-surface-alt border-y border-border"
+            style={{ padding: 'clamp(80px,12vh,140px) clamp(18px,5vw,60px)' }}
+        >
+            <div className="mx-auto" style={{ maxWidth: '1180px' }}>
+                {/* Header */}
+                <div className="reveal mb-[46px]">
+                    <div className="font-[family-name:var(--font-mono)] text-accent text-[13px] tracking-[0.1em] mb-3">
+                        05 // certifications
+                    </div>
+                    <h2
+                        className="font-[family-name:var(--font-heading)] text-text-primary font-semibold m-0"
+                        style={{ fontSize: 'clamp(30px,4.6vw,52px)', letterSpacing: '-0.02em' }}
+                    >
                         {title}
                     </h2>
-                    <div className="w-12 h-0.5 bg-accent mx-auto" />
                 </div>
 
-                {/* Certifications Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Grid */}
+                <div className="grid gap-[18px]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
                     {certifications.map((cert, index) => (
                         <div
                             key={index}
-                            className="reveal p-6 bg-bg-surface rounded-xl border border-border hover:border-accent/40 transition-colors duration-200 group"
+                            className="reveal group flex flex-col bg-bg-surface border border-border rounded-[14px] p-6 transition-[border-color] duration-200 hover:border-[var(--accent-line)]"
                         >
-                            {/* Icon and Title */}
+                            {/* Icon and title */}
                             <div className="flex items-start gap-4 mb-4">
                                 <CertIcon icon={cert.icon} />
                                 <div className="flex-1">
-                                    <h3 className="text-lg font-semibold text-text-primary group-hover:text-accent transition-colors duration-200">
+                                    <h3 className="font-[family-name:var(--font-heading)] text-[17px] font-semibold text-text-primary leading-snug group-hover:text-accent transition-colors duration-200">
                                         {cert.name}
                                     </h3>
-                                    <p className="text-sm text-text-secondary">
-                                        {cert.issuer}
-                                    </p>
-                                    <p className="text-xs text-text-muted mt-1">
-                                        {cert.date}
-                                    </p>
+                                    <p className="text-sm text-text-secondary mt-1">{cert.issuer}</p>
+                                    <p className="font-[family-name:var(--font-mono)] text-[11px] text-text-muted mt-1">{cert.date}</p>
                                 </div>
                             </div>
 
                             {/* Skills */}
-                            <div className="mb-4">
-                                <p className="text-xs text-text-muted mb-2">
-                                    {skillsLabel}:
+                            <div className="mb-5">
+                                <p className="font-[family-name:var(--font-mono)] text-[11px] text-text-muted mb-2 tracking-[0.04em]">
+                                    {skillsLabel}
                                 </p>
-                                <div className="flex flex-wrap gap-1.5">
+                                <div className="flex flex-wrap gap-2">
                                     {cert.skills.map((skill) => (
                                         <span
                                             key={skill}
-                                            className="px-2 py-0.5 text-xs font-medium bg-bg-surface-alt text-text-secondary rounded-md border border-border"
+                                            className="font-[family-name:var(--font-mono)] text-[11.5px] text-text-secondary bg-bg-surface-alt border border-border rounded-[7px] px-[10px] py-[5px]"
                                         >
                                             {skill}
                                         </span>
@@ -214,16 +218,16 @@ export default function Certifications() {
                                 </div>
                             </div>
 
-                            {/* Credential Link */}
+                            {/* Credential link */}
                             <a
                                 href={cert.credentialUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-text-secondary border border-border rounded-lg hover:border-accent hover:text-accent transition-colors duration-200"
+                                className="mt-auto inline-flex items-center gap-2 w-fit font-[family-name:var(--font-mono)] text-[12px] text-text-muted border border-border rounded-lg px-[11px] py-[7px] transition-all duration-200 hover:border-accent hover:text-accent"
                             >
                                 {showCredential}
-                                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                <svg className="w-[14px] h-[14px]" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                                 </svg>
                             </a>
                         </div>

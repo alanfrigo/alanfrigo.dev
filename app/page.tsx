@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import BackgroundFX from "@/components/BackgroundFX";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
@@ -12,9 +13,10 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="relative min-h-screen overflow-x-clip bg-bg-base text-text-secondary">
+      <BackgroundFX />
       <Navbar />
-      <main>
+      <main className="relative z-[1]">
         <Hero />
         <Marquee />
         <About />
@@ -24,8 +26,8 @@ export default function Home() {
         <Certifications />
         <Education />
         <Contact />
+        <Footer />
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }

@@ -2,52 +2,32 @@
 
 export default function Marquee() {
     const items = [
-        // AI & Machine Learning
-        'AI Agents',
-        'Agno',
-        'LangChain',
-        'Machine Learning',
-
-        // Backend & Infrastructure
-        'Python',
-        'FastAPI',
-        'Databricks',
-        'PostgreSQL',
-        'Supabase',
-        'Docker',
-        'AWS',
-        'Azure',
-        'Google Cloud',
-        'Cloudflare',
-        'N8N',
-
-        // Frontend & Languages
-        'NextJS',
-        'TypeScript',
-        'Vercel',
-
-        // Services & Roles
-        'Software Engineering',
-        'AI Engineering',
+        'Python', 'Databricks', 'LangChain', 'Agno', 'NextJS', 'Supabase',
+        'AWS', 'Docker', 'N8N', 'TypeScript', 'PostgreSQL', 'RAG',
+        'Multi-Agent', 'Cloudflare R2',
     ];
 
-    const row = items.map((item, i) => (
-        <span key={i} className="inline-flex items-center gap-6 mx-6">
-            <span className="text-xs font-[family-name:var(--font-heading)] font-semibold uppercase tracking-[0.18em] text-text-muted">
-                {item}
-            </span>
-            <span className="w-1 h-1 rounded-full bg-accent/50 flex-shrink-0" aria-hidden="true" />
-        </span>
-    ));
+    const group = (
+        <div className="flex items-center gap-[34px] pr-[34px]">
+            {items.map((m, i) => (
+                <span key={i} className="inline-flex items-center gap-[34px]">
+                    <span
+                        className="font-[family-name:var(--font-heading)] font-medium text-text-muted whitespace-nowrap"
+                        style={{ fontSize: 'clamp(18px,2.4vw,26px)' }}
+                    >
+                        {m}
+                    </span>
+                    <span className="w-[6px] h-[6px] rounded-full bg-accent opacity-70" />
+                </span>
+            ))}
+        </div>
+    );
 
     return (
-        <div
-            className="py-5 border-y border-border bg-bg-surface-alt overflow-hidden"
-            aria-hidden="true"
-        >
-            <div className="marquee-track">
-                <div className="marquee-content">{row}</div>
-                <div className="marquee-content" aria-hidden="true">{row}</div>
+        <div className="border-y border-border bg-bg-surface-alt py-5 overflow-hidden relative" aria-hidden="true">
+            <div className="af-marquee">
+                {group}
+                {group}
             </div>
         </div>
     );
