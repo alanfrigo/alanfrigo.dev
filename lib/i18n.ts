@@ -180,7 +180,15 @@ Developed effective sales funnels and newsletter campaigns that improved custome
         projects: {
             title: 'Projects',
             viewOnGithub: 'View on GitHub',
+            readBlog: 'Read The AI Cliff',
+            blogBadge: 'Blog',
             items: {
+                aicliff: {
+                    name: 'The AI Cliff',
+                    tagline: 'AI newsletter on Substack',
+                    description: 'My newsletter where I write about artificial intelligence — LLMs, AI agents, and the tools and ideas shaping how we build with AI. Practical takes from the edge of the field.',
+                    features: ['LLMs', 'AI Agents', 'RAG', 'Prompt Engineering', 'AI Tooling'],
+                },
                 supapanel: {
                     name: 'SupaPanel',
                     description: 'Open-source management panel for self-hosted Supabase instances. Deploy your own Supabase infrastructure on any Linux server with a single command.',
@@ -388,7 +396,15 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
         projects: {
             title: 'Projetos',
             viewOnGithub: 'Ver no GitHub',
+            readBlog: 'Ler o The AI Cliff',
+            blogBadge: 'Blog',
             items: {
+                aicliff: {
+                    name: 'The AI Cliff',
+                    tagline: 'Newsletter sobre IA no Substack',
+                    description: 'Minha newsletter onde escrevo sobre inteligência artificial — LLMs, agentes de IA e as ferramentas e ideias que moldam como construímos com IA. Visões práticas direto da fronteira da área.',
+                    features: ['LLMs', 'Agentes de IA', 'RAG', 'Engenharia de Prompt', 'Ferramentas de IA'],
+                },
                 supapanel: {
                     name: 'SupaPanel',
                     description: 'Painel de gerenciamento open-source para instâncias Supabase self-hosted. Implante sua própria infraestrutura Supabase em qualquer servidor Linux com um único comando.',

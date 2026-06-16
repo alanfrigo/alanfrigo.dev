@@ -12,6 +12,9 @@ export default function Projects() {
         { key: 'brain', logo: '/brain-logo.svg', githubUrl: 'https://github.com/alanfrigo/brain' },
     ] as const;
 
+    const substackUrl = 'https://theaicliff.substack.com';
+    const aicliff = t.projects.items.aicliff;
+
     return (
         <section
             id="projects"
@@ -31,6 +34,63 @@ export default function Projects() {
                         {t.projects.title}
                     </h2>
                 </div>
+
+                {/* Featured: The AI Cliff (blog) */}
+                <a
+                    href={substackUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="reveal group block mb-[22px] rounded-2xl border border-accent p-[clamp(24px,4vw,36px)] transition-[box-shadow,transform] duration-200 hover:shadow-[var(--shadow)] hover:-translate-y-[2px]"
+                    style={{ background: 'linear-gradient(135deg, var(--accent-soft), var(--bg-surface) 55%)' }}
+                >
+                    <div className="flex items-start justify-between gap-4 mb-5">
+                        <div className="flex items-center gap-4">
+                            <div className="flex items-center justify-center w-[54px] h-[54px] rounded-xl bg-bg-surface border border-border shrink-0">
+                                <Image
+                                    src="/substack-logo.svg"
+                                    alt={aicliff.name}
+                                    width={32}
+                                    height={32}
+                                    className="w-8 h-8 object-contain"
+                                    unoptimized
+                                />
+                            </div>
+                            <div>
+                                <h3 className="font-[family-name:var(--font-heading)] text-[clamp(22px,3vw,28px)] font-semibold text-text-primary m-0 leading-none">
+                                    {aicliff.name}
+                                </h3>
+                                <div className="font-[family-name:var(--font-mono)] text-accent text-[12.5px] tracking-[0.04em] mt-2">
+                                    {aicliff.tagline}
+                                </div>
+                            </div>
+                        </div>
+                        <span className="inline-flex items-center gap-[6px] font-[family-name:var(--font-mono)] text-[11px] uppercase tracking-[0.08em] text-accent bg-[var(--accent-soft)] border border-accent rounded-full px-[11px] py-[5px] whitespace-nowrap shrink-0">
+                            <span className="w-[6px] h-[6px] rounded-full bg-accent" />
+                            {t.projects.blogBadge}
+                        </span>
+                    </div>
+
+                    <p className="text-text-secondary text-[15.5px] m-0 mb-6 max-w-[760px]" style={{ lineHeight: 1.65 }}>
+                        {aicliff.description}
+                    </p>
+
+                    <div className="flex flex-wrap items-center justify-between gap-4">
+                        <div className="flex flex-wrap gap-2">
+                            {aicliff.features.map((feat) => (
+                                <span
+                                    key={feat}
+                                    className="font-[family-name:var(--font-mono)] text-[11.5px] text-text-secondary bg-bg-surface border border-border rounded-[7px] px-[10px] py-[5px]"
+                                >
+                                    {feat}
+                                </span>
+                            ))}
+                        </div>
+                        <span className="inline-flex items-center gap-[8px] font-[family-name:var(--font-mono)] text-[13px] font-medium text-accent bg-[var(--accent-soft)] border border-accent rounded-lg px-[18px] py-[11px] transition-all duration-200 group-hover:bg-[var(--accent-line)] group-hover:border-[var(--accent-deep)]">
+                            {t.projects.readBlog}
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M7 17 17 7M9 7h8v8" /></svg>
+                        </span>
+                    </div>
+                </a>
 
                 {/* Grid */}
                 <div className="grid gap-[22px]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))' }}>
