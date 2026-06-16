@@ -184,16 +184,31 @@ export default function Certifications() {
 
                 {/* Grid */}
                 <div className="grid gap-[18px]" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))' }}>
-                    {certifications.map((cert, index) => (
+                    {certifications.map((cert, index) => {
+                        const isAccredited = cert.name.includes('Academy Accreditation');
+                        const accreditedLabel = language === 'en' ? 'Accreditation' : 'Acreditação';
+                        return (
                         <div
                             key={index}
-                            className="reveal group flex flex-col bg-bg-surface border border-border rounded-[14px] p-6 transition-[border-color] duration-200 hover:border-[var(--accent-line)]"
+                            className={`reveal group relative flex flex-col rounded-[14px] p-6 transition-[border-color,box-shadow] duration-200 ${
+                                isAccredited
+                                    ? 'bg-[color-mix(in_srgb,var(--accent)_5%,var(--bg-surface))] border border-accent shadow-[0_0_0_1px_var(--accent),0_8px_30px_-12px_var(--accent)] hover:shadow-[0_0_0_1px_var(--accent),0_12px_36px_-10px_var(--accent)]'
+                                    : 'bg-bg-surface border border-border hover:border-[var(--accent-line)]'
+                            }`}
                         >
+                            {isAccredited && (
+                                <span className="absolute top-4 right-4 inline-flex items-center gap-1 font-[family-name:var(--font-mono)] text-[10px] tracking-[0.08em] uppercase text-bg-base bg-accent rounded-full px-[9px] py-[3px]">
+                                    <svg className="w-[11px] h-[11px]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01L12 1z" />
+                                    </svg>
+                                    {accreditedLabel}
+                                </span>
+                            )}
                             {/* Icon and title */}
                             <div className="flex items-start gap-4 mb-4">
                                 <CertIcon icon={cert.icon} />
                                 <div className="flex-1">
-                                    <h3 className="font-[family-name:var(--font-heading)] text-[17px] font-semibold text-text-primary leading-snug group-hover:text-accent transition-colors duration-200">
+                                    <h3 className={`font-[family-name:var(--font-heading)] text-[17px] font-semibold text-text-primary leading-snug group-hover:text-accent transition-colors duration-200 ${isAccredited ? 'pr-24' : ''}`}>
                                         {cert.name}
                                     </h3>
                                     <p className="text-sm text-text-secondary mt-1">{cert.issuer}</p>
@@ -231,7 +246,8 @@ export default function Certifications() {
                                 </svg>
                             </a>
                         </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>
