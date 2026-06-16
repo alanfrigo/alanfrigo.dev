@@ -29,6 +29,7 @@ export default function Footer() {
                     © 2026 Alan Frigo — {t.footer.rights}
                 </div>
                 <div className="flex gap-[18px] font-[family-name:var(--font-mono)] text-[13px]">
+                    <a href="https://theaicliff.substack.com" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors duration-200">substack</a>
                     <a href="https://github.com/alanfrigo" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors duration-200">github</a>
                     <a href="https://linkedin.com/in/alanfrigo" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent transition-colors duration-200">linkedin</a>
                     <a href="mailto:alanfrigo@gmail.com" className="text-text-secondary hover:text-accent transition-colors duration-200">email</a>
