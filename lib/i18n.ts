@@ -15,7 +15,7 @@ export const translations = {
         // Hero Section
         hero: {
             role: 'AI Engineer | Python | Databricks | LangChain | Agno | NextJS',
-            tagline: 'Full Stack Engineer and AI Lead building scalable applications with Python, NextJS, and cloud infrastructure.',
+            tagline: 'Full Stack Engineer and AI Lead building applications with Python, NextJS, and cloud infrastructure.',
             cta: {
                 contact: 'Get in Touch',
                 resume: 'Download Resume',
@@ -24,15 +24,15 @@ export const translations = {
         // About Section
         about: {
             title: 'About Me',
-            description: `Full Stack Engineer and AI Lead building scalable applications with Python, NextJS, and cloud infrastructure.
+            description: `Full Stack Engineer and AI Lead. I build applications with Python, NextJS, and cloud infrastructure.
 
-Currently working as an AI Engineer, architecting multi-agent systems and AI solutions for real-world business problems with Databricks, LangChain, and Python. My day-to-day involves hands-on coding alongside technical decisions from agent architecture to cloud infrastructure to deployment pipelines.
+Right now I work as an AI Engineer, building multi-agent systems and AI solutions for real business problems with Databricks, LangChain, and Python. The work is hands-on: I write code, and I make the technical calls on agent design, cloud setup, and deployment.
 
-My path to software engineering wasn't traditional. I spent years building businesses, WordPress development, SEO strategy, marketing automation with N8N. That background taught me to think beyond code: understanding users, measuring impact, and shipping things that actually solve problems.
+I didn't come to software the usual way. I spent years running businesses, doing WordPress development, SEO, and marketing automation with N8N. That taught me to think past the code: who uses it, whether it moves the numbers, and whether it solves the problem it was meant to.
 
 Core stack: Python, Databricks, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
 
-Based in Brazil, working remotely with US companies.`,
+I'm based in Brazil and work remotely with US companies.`,
             stats: {
                 yearsExperience: 'Years Experience',
                 companies: 'Companies',
@@ -50,10 +50,10 @@ Based in Brazil, working remotely with US companies.`,
                     role: 'Artificial Intelligence Engineer',
                     period: 'April 2026 - Present',
                     location: 'Brazil',
-                    description: `Working on solutions that integrate Artificial Intelligence to solve real-world business problems. Currently assigned to a major client in the retail sector.
+                    description: `I build AI solutions for real business problems. Currently assigned to a large retail client.
 
-Projects I have developed:
-- Multi-agent system for detecting inconsistencies in payment orders, including potential fraud.`,
+Projects I've built:
+- A multi-agent system that flags inconsistencies in payment orders, including possible fraud.`,
                     technologies: ['Databricks', 'Databricks Agents & Genie', 'LangChain', 'Python'],
                 },
                 indominusAI: {
@@ -61,11 +61,11 @@ Projects I have developed:
                     role: 'Head of Artificial Intelligence',
                     period: 'June 2025 - April 2026',
                     location: 'São Paulo, Brazil',
-                    description: `Leading a development team building AI-powered applications, balancing hands-on coding with architecture decisions and technical mentorship.
+                    description: `I lead a development team building AI applications, splitting my time between writing code, making architecture calls, and mentoring the team.
 
-Architecting and implementing AI agents and multi-agent systems for business process automation using Python (Agno Framework), NextJS, and Supabase. Developing machine learning solutions for image analysis and categorization.
+I design and build AI agents and multi-agent systems for business process automation with Python (Agno Framework), NextJS, and Supabase, plus machine learning for image analysis and categorization.
 
-Managing cloud infrastructure across AWS (EC2, RDS, SES, SQS, S3), Vercel, and Railway. Designing secure and scalable architectures using VPC, Cloudflare R2, and containerized deployments. Building automation workflows with N8N to streamline development and operations.`,
+I manage cloud infrastructure across AWS (EC2, RDS, SES, SQS, S3), Vercel, and Railway, and design the architecture behind it using VPC, Cloudflare R2, and containerized deployments. I also build N8N workflows to automate parts of development and operations.`,
                     technologies: ['Python', 'Agno', 'LangChain', 'NextJS', 'Supabase', 'AWS', 'Docker', 'N8N', 'Cloudflare R2'],
                 },
                 pixelPeninsula: {
@@ -73,11 +73,11 @@ Managing cloud infrastructure across AWS (EC2, RDS, SES, SQS, S3), Vercel, and R
                     role: 'Co-Founder & Tech Lead',
                     period: 'November 2024 - December 2025',
                     location: 'Sheridan, Wyoming, USA',
-                    description: `Co-founded a media company and led the technical acquisition and infrastructure overhaul of three gaming blogs (OutsiderGaming, LeagueFeed, LeagueTips).
+                    description: `I co-founded a media company and led the technical side of acquiring and rebuilding three gaming blogs (OutsiderGaming, LeagueFeed, LeagueTips).
 
-Architected and executed a complete server migration to OVHCloud Bare Metal, implementing containerized infrastructure with Docker and EasyPanel for improved performance and scalability. Developed custom WordPress plugins and integrated analytics tracking with Matomo and Google Analytics.
+I migrated the servers to OVHCloud Bare Metal and set up containerized infrastructure with Docker and EasyPanel, which made the sites faster and easier to scale. I also wrote custom WordPress plugins and set up analytics with Matomo and Google Analytics.
 
-Managed SEO strategy across all properties, on-page optimizations, content structure, and link building campaigns that increased overall traffic by 20%.`,
+I ran SEO across all three sites, including on-page work, content structure, and link building, and grew overall traffic by 20%.`,
                     technologies: ['Docker', 'EasyPanel', 'WordPress', 'N8N', 'Matomo', 'Google Analytics', 'SEMRUSH', 'AHREFS'],
                 },
                 at2eEngineer: {
@@ -85,9 +85,9 @@ Managed SEO strategy across all properties, on-page optimizations, content struc
                     role: 'Software Engineer',
                     period: 'March 2024 - July 2025',
                     location: 'Chicago, IL, USA',
-                    description: `Led technical initiatives including the development of an internal management system built with NextJS, Python, and Supabase for handling quotes, customers, and purchase orders. Migrated company infrastructure from VPS to AWS (EC2), improving scalability and reducing operational costs.
+                    description: `I built an internal management system with NextJS, Python, and Supabase to handle quotes, customers, and purchase orders. I also moved the company's infrastructure from a VPS to AWS (EC2), which improved scalability and cut operating costs.
 
-Also managed SEO strategy, increasing daily Google search clicks from 6 to 65 and securing 20+ top-ranking keywords through technical optimizations and strategic link building.`,
+On the marketing side, I ran SEO: daily Google clicks went from 6 to 65, and I got more than 20 keywords ranking near the top through technical fixes and link building.`,
                     technologies: ['NextJS', 'Python', 'Agno', 'Supabase', 'AWS EC2', 'N8N', 'WordPress', 'Google Analytics', 'SEMRUSH', 'AHREFS'],
                 },
                 at2eDev: {
@@ -95,11 +95,11 @@ Also managed SEO strategy, increasing daily Google search clicks from 6 to 65 an
                     role: 'Web Developer',
                     period: 'November 2023 - March 2024',
                     location: 'Chicago, IL, USA',
-                    description: `Worked as a WordPress Developer at AT2E-USA, a U.S.-based supplier of quality testing equipment for beverage packaging.
+                    description: `I worked as a WordPress developer at AT2E-USA, a US supplier of quality-testing equipment for beverage packaging.
 
-Successfully restructured and migrated the website from Weebly to WordPress, achieving a perfect 100% score on PageSpeed Tools. Developed custom WordPress plugins and automated key processes, significantly improving site performance and operational efficiency.
+I rebuilt and migrated the site from Weebly to WordPress and got it to a 100% PageSpeed score. I wrote custom plugins and automated a few manual processes, which made the site faster and the team's work lighter.
 
-Rebuilt the site with Elementor Pro and WooCommerce, transitioning from an e-commerce platform to a product catalog. Implemented a self-hosted webchat solution via WooChat and developed automation workflows for WhatsApp notifications using the WhatsApp API and N8N.`,
+I rebuilt the site again with Elementor Pro and WooCommerce, moving it from a store to a product catalog. I set up a self-hosted webchat with WooChat and built WhatsApp notification workflows using the WhatsApp API and N8N.`,
                     technologies: ['WordPress', 'Elementor Pro', 'WooCommerce', 'VPS', 'WooChat', 'WhatsApp API', 'N8N'],
                 },
                 apolloPodcasts: {
@@ -107,11 +107,11 @@ Rebuilt the site with Elementor Pro and WooCommerce, transitioning from an e-com
                     role: 'Software Engineer & SEO Lead',
                     period: 'July 2024 - November 2024',
                     location: 'Los Angeles, CA, USA',
-                    description: `Developed a web-based podcast player prototype using NextJS and Supabase, reviving a project that had been stalled for months. Built the frontend interface and backend integration for Apollo Podcasts, a fiction podcast platform.
+                    description: `I built a web-based podcast player prototype with NextJS and Supabase, picking up a project that had been stalled for months. I wrote the frontend and the backend integration for Apollo Podcasts, a fiction podcast platform.
 
-Also led SEO initiatives that drove significant growth — increased daily Google search clicks from 5 to 105, improved PageSpeed score from 70% to 99%, and built domain authority to DR 39 through strategic link building. Migrated the website from Webflow to WordPress for better performance and control.
+I also ran SEO, with solid results: daily Google clicks went from 5 to 105, the PageSpeed score went from 70% to 99%, and domain authority reached DR 39 through link building. I moved the site from Webflow to WordPress for better performance and control.
 
-Implemented email marketing infrastructure using AWS SES and optimized app store presence through ASO.`,
+On top of that, I set up email marketing with AWS SES and worked on app store visibility through ASO.`,
                     technologies: ['NextJS', 'Supabase', 'WordPress', 'AWS SES', 'SEMRUSH', 'AHREFS', 'MOZ'],
                 },
                 rocketJump: {
@@ -119,11 +119,11 @@ Implemented email marketing infrastructure using AWS SES and optimized app store
                     role: 'Founder',
                     period: 'December 2019 - November 2024',
                     location: 'Curitiba, Brazil',
-                    description: `Founder of Rocket Jump, a digital marketing company focused on co-producing and launching infoproducts in partnership with content creators. Oversaw both strategic and operational aspects of digital product launches, from content planning to sales execution.
+                    description: `I founded Rocket Jump, a digital marketing company that co-produced and launched infoproducts with content creators. I handled both the strategy and the day-to-day of those launches, from planning the content to running the sales.
 
-Successfully launched multiple digital products and helped content creators establish a strong online presence. Managed strategic paid ad campaigns across Facebook, Instagram, LinkedIn, and TikTok, driving lead generation and sales growth. Led the development of high-converting landing pages, integrating automation and analytics to optimize performance.
+I launched several digital products and helped creators build an audience. I ran paid campaigns on Facebook, Instagram, LinkedIn, and TikTok that brought in leads and sales, and I led the work on landing pages built to convert, with automation and analytics wired in to track what worked.
 
-Managed a video editing team, designed and optimized landing pages, and implemented email marketing automation with AWS SES.`,
+I also managed a video editing team, designed and tuned landing pages, and set up email marketing automation with AWS SES.`,
                     technologies: ['WordPress', 'Elementor', 'N8N', 'WhatsApp API', 'AWS SES', 'Typebot', 'Facebook Ads', 'Instagram Ads', 'LinkedIn Ads', 'TikTok Ads', 'Google Analytics', 'SEMRUSH', 'AHREFS'],
                 },
                 rebbel: {
@@ -131,11 +131,11 @@ Managed a video editing team, designed and optimized landing pages, and implemen
                     role: 'Founder',
                     period: 'March 2016 - March 2019',
                     location: 'Cascavel, Brazil',
-                    description: `Founded Rebbel as a men's watch store, later evolving into a broader men's apparel brand with a focus on t-shirts.
+                    description: `I started Rebbel as a men's watch store and later grew it into a men's apparel brand built mostly around t-shirts.
 
-Successfully migrated the e-commerce platform from PrestaShop to WordPress and WooCommerce, enhancing user experience and operational efficiency. Boosted local SEO performance and increased organic traffic through targeted optimization strategies.
+I moved the store from PrestaShop to WordPress and WooCommerce, which made it easier to use and run. I improved local SEO and brought in more organic traffic.
 
-Developed effective sales funnels and newsletter campaigns that improved customer engagement and conversion rates. Managed all aspects of the e-commerce platform, from initial setup to ongoing maintenance and optimization.`,
+I built sales funnels and newsletter campaigns that got customers more engaged and lifted conversion rates. I ran the whole store myself, from the first setup through the ongoing upkeep.`,
                     technologies: ['PrestaShop', 'WordPress', 'WooCommerce', 'Ubersuggest'],
                 },
             },
@@ -186,7 +186,7 @@ Developed effective sales funnels and newsletter campaigns that improved custome
                 aicliff: {
                     name: 'The AI Cliff',
                     tagline: 'AI newsletter on Substack',
-                    description: 'My newsletter where I write about artificial intelligence — LLMs, AI agents, and the tools and ideas shaping how we build with AI. Practical takes from the edge of the field.',
+                    description: 'My newsletter about artificial intelligence: LLMs, AI agents, and the tools and ideas changing how we build with AI. Practical writing from someone working in the field.',
                     features: ['LLMs', 'AI Agents', 'RAG', 'Prompt Engineering', 'AI Tooling'],
                 },
                 supapanel: {
@@ -209,7 +209,7 @@ Developed effective sales funnels and newsletter campaigns that improved custome
         // Contact Section
         contact: {
             title: "Let's Connect",
-            subtitle: 'Interested in working together? Feel free to reach out!',
+            subtitle: 'Want to work together? Send me a message.',
             linkedin: 'Connect on LinkedIn',
             email: 'Send an Email',
             whatsapp: 'Chat on WhatsApp',
@@ -231,7 +231,7 @@ Developed effective sales funnels and newsletter campaigns that improved custome
         // Hero Section
         hero: {
             role: 'Engenheiro de IA | Python | Databricks | LangChain | Agno | NextJS',
-            tagline: 'Engenheiro Full Stack e AI Lead construindo aplicações escaláveis com Python, NextJS e infraestrutura em nuvem.',
+            tagline: 'Engenheiro Full Stack e AI Lead construindo aplicações com Python, NextJS e infraestrutura em nuvem.',
             cta: {
                 contact: 'Entre em Contato',
                 resume: 'Baixar Currículo',
@@ -240,15 +240,15 @@ Developed effective sales funnels and newsletter campaigns that improved custome
         // About Section
         about: {
             title: 'Sobre Mim',
-            description: `Engenheiro Full Stack e AI Lead construindo aplicações escaláveis com Python, NextJS e infraestrutura em nuvem.
+            description: `Engenheiro Full Stack e AI Lead. Construo aplicações com Python, NextJS e infraestrutura em nuvem.
 
-Atualmente atuando como Engenheiro de IA, arquitetando sistemas multi-agentes e soluções de IA para problemas reais de negócio com Databricks, LangChain e Python. Meu dia-a-dia envolve codificação hands-on junto com decisões técnicas desde arquitetura de agentes até infraestrutura em nuvem e pipelines de deploy.
+Hoje trabalho como Engenheiro de IA, construindo sistemas multi-agentes e soluções de IA para problemas reais de negócio com Databricks, LangChain e Python. O trabalho é mão na massa: escrevo código e tomo as decisões técnicas sobre o design dos agentes, a infraestrutura em nuvem e os pipelines de deploy.
 
-Meu caminho para engenharia de software não foi tradicional. Passei anos construindo negócios, desenvolvimento WordPress, estratégia de SEO, automação de marketing com N8N. Esse background me ensinou a pensar além do código: entender usuários, medir impacto e entregar coisas que realmente resolvem problemas.
+Não cheguei à engenharia de software pelo caminho comum. Passei anos tocando negócios, desenvolvendo em WordPress, fazendo SEO e automação de marketing com N8N. Isso me ensinou a pensar além do código: quem vai usar, se mexe nos números e se resolve o problema que precisava resolver.
 
 Stack principal: Python, Databricks, Agno, LangChain, NextJS, Supabase, AWS, Docker, N8N
 
-Baseado no Brasil, trabalhando remotamente com empresas americanas.`,
+Moro no Brasil e trabalho remoto com empresas americanas.`,
             stats: {
                 yearsExperience: 'Anos de Experiência',
                 companies: 'Empresas',
@@ -266,10 +266,10 @@ Baseado no Brasil, trabalhando remotamente com empresas americanas.`,
                     role: 'Engenheiro de Inteligência Artificial',
                     period: 'Abril 2026 - Presente',
                     location: 'Brasil',
-                    description: `Trabalhando em soluções que integram Inteligência Artificial para resolver problemas reais de negócio. Atualmente alocado em um grande cliente do setor de varejo.
+                    description: `Construo soluções de IA para problemas reais de negócio. Atualmente alocado em um grande cliente do varejo.
 
 Projetos que desenvolvi:
-- Sistema multi-agente para detecção de inconsistências em ordens de pagamento, incluindo potenciais fraudes.`,
+- Sistema multi-agente que detecta inconsistências em ordens de pagamento, incluindo possíveis fraudes.`,
                     technologies: ['Databricks', 'Databricks Agents & Genie', 'LangChain', 'Python'],
                 },
                 indominusAI: {
@@ -277,11 +277,11 @@ Projetos que desenvolvi:
                     role: 'Head de Inteligência Artificial',
                     period: 'Junho 2025 - Abril 2026',
                     location: 'São Paulo, Brasil',
-                    description: `Liderando uma equipe de desenvolvimento construindo aplicações com IA, equilibrando codificação hands-on com decisões de arquitetura e mentoria técnica.
+                    description: `Lidero uma equipe de desenvolvimento que constrói aplicações com IA, dividindo meu tempo entre escrever código, decisões de arquitetura e mentoria do time.
 
-Arquitetando e implementando agentes de IA e sistemas multi-agentes para automação de processos de negócios usando Python (Agno Framework), NextJS e Supabase. Desenvolvendo soluções de machine learning para análise e categorização de imagens.
+Projeto e construo agentes de IA e sistemas multi-agentes para automação de processos com Python (Agno Framework), NextJS e Supabase, além de machine learning para análise e categorização de imagens.
 
-Gerenciando infraestrutura em nuvem na AWS (EC2, RDS, SES, SQS, S3), Vercel e Railway. Projetando arquiteturas seguras e escaláveis usando VPC, Cloudflare R2 e deployments containerizados. Construindo workflows de automação com N8N.`,
+Cuido da infraestrutura em nuvem na AWS (EC2, RDS, SES, SQS, S3), Vercel e Railway, e desenho a arquitetura por trás disso com VPC, Cloudflare R2 e deployments containerizados. Também construo workflows no N8N para automatizar partes do desenvolvimento e da operação.`,
                     technologies: ['Python', 'Agno', 'LangChain', 'NextJS', 'Supabase', 'AWS', 'Docker', 'N8N', 'Cloudflare R2'],
                 },
                 pixelPeninsula: {
@@ -289,11 +289,11 @@ Gerenciando infraestrutura em nuvem na AWS (EC2, RDS, SES, SQS, S3), Vercel e Ra
                     role: 'Co-Fundador & Tech Lead',
                     period: 'Novembro 2024 - Dezembro 2025',
                     location: 'Sheridan, Wyoming, EUA',
-                    description: `Co-fundei uma empresa de mídia e liderei a aquisição técnica e reestruturação de infraestrutura de três blogs de games (OutsiderGaming, LeagueFeed, LeagueTips).
+                    description: `Co-fundei uma empresa de mídia e liderei a parte técnica da aquisição e reconstrução de três blogs de games (OutsiderGaming, LeagueFeed, LeagueTips).
 
-Arquitetei e executei uma migração completa de servidores para OVHCloud Bare Metal, implementando infraestrutura containerizada com Docker e EasyPanel para melhor performance e escalabilidade. Desenvolvi plugins WordPress customizados e integrei tracking de analytics com Matomo e Google Analytics.
+Migrei os servidores para OVHCloud Bare Metal e montei a infraestrutura containerizada com Docker e EasyPanel, o que deixou os sites mais rápidos e fáceis de escalar. Também escrevi plugins WordPress customizados e configurei analytics com Matomo e Google Analytics.
 
-Gerenciei estratégia de SEO em todas as propriedades, otimizações on-page, estrutura de conteúdo e campanhas de link building que aumentaram o tráfego geral em 20%.`,
+Cuidei do SEO dos três sites, incluindo otimizações on-page, estrutura de conteúdo e link building, e aumentei o tráfego geral em 20%.`,
                     technologies: ['Docker', 'EasyPanel', 'WordPress', 'N8N', 'Matomo', 'Google Analytics', 'SEMRUSH', 'AHREFS'],
                 },
                 at2eEngineer: {
@@ -301,9 +301,9 @@ Gerenciei estratégia de SEO em todas as propriedades, otimizações on-page, es
                     role: 'Engenheiro de Software',
                     period: 'Março 2024 - Julho 2025',
                     location: 'Chicago, IL, EUA',
-                    description: `Liderei iniciativas técnicas incluindo o desenvolvimento de um sistema de gestão interno construído com NextJS, Python e Supabase para gerenciar orçamentos, clientes e pedidos de compra. Migrei a infraestrutura da empresa de VPS para AWS (EC2), melhorando escalabilidade e reduzindo custos operacionais.
+                    description: `Construí um sistema de gestão interno com NextJS, Python e Supabase para gerenciar orçamentos, clientes e pedidos de compra. Também migrei a infraestrutura da empresa de um VPS para a AWS (EC2), o que melhorou a escalabilidade e reduziu os custos.
 
-Também gerenciei estratégia de SEO, aumentando cliques diários do Google de 6 para 65 e garantindo 20+ palavras-chave bem ranqueadas através de otimizações técnicas e link building estratégico.`,
+No marketing, cuidei do SEO: os cliques diários no Google foram de 6 para 65, e coloquei mais de 20 palavras-chave bem ranqueadas com ajustes técnicos e link building.`,
                     technologies: ['NextJS', 'Python', 'Agno', 'Supabase', 'AWS EC2', 'N8N', 'WordPress', 'Google Analytics', 'SEMRUSH', 'AHREFS'],
                 },
                 at2eDev: {
@@ -311,11 +311,11 @@ Também gerenciei estratégia de SEO, aumentando cliques diários do Google de 6
                     role: 'Desenvolvedor Web',
                     period: 'Novembro 2023 - Março 2024',
                     location: 'Chicago, IL, EUA',
-                    description: `Trabalhei como Desenvolvedor WordPress na AT2E-USA, fornecedora americana de equipamentos de teste de qualidade para embalagens de bebidas.
+                    description: `Trabalhei como desenvolvedor WordPress na AT2E-USA, fornecedora americana de equipamentos de teste de qualidade para embalagens de bebidas.
 
-Reestruturei e migrei com sucesso o site de Weebly para WordPress, alcançando 100% no PageSpeed Tools. Desenvolvi plugins WordPress customizados e automatizei processos-chave, melhorando significativamente a performance do site e eficiência operacional.
+Reconstruí e migrei o site de Weebly para WordPress e cheguei a 100% no PageSpeed. Escrevi plugins customizados e automatizei alguns processos manuais, o que deixou o site mais rápido e o trabalho do time mais leve.
 
-Reconstruí o site com Elementor Pro e WooCommerce, fazendo a transição de plataforma e-commerce para catálogo de produtos. Implementei solução de webchat self-hosted via WooChat e desenvolvi workflows de automação para notificações WhatsApp.`,
+Reconstruí o site de novo com Elementor Pro e WooCommerce, transformando a loja em um catálogo de produtos. Montei um webchat self-hosted com WooChat e criei workflows de notificação no WhatsApp usando a WhatsApp API e o N8N.`,
                     technologies: ['WordPress', 'Elementor Pro', 'WooCommerce', 'VPS', 'WooChat', 'WhatsApp API', 'N8N'],
                 },
                 apolloPodcasts: {
@@ -323,11 +323,11 @@ Reconstruí o site com Elementor Pro e WooCommerce, fazendo a transição de pla
                     role: 'Engenheiro de Software & SEO Lead',
                     period: 'Julho 2024 - Novembro 2024',
                     location: 'Los Angeles, CA, EUA',
-                    description: `Desenvolvi um protótipo de player de podcast web usando NextJS e Supabase, revivendo um projeto que estava parado há meses. Construí a interface frontend e integração backend para Apollo Podcasts, uma plataforma de podcasts de ficção.
+                    description: `Construí um protótipo de player de podcast web com NextJS e Supabase, retomando um projeto que estava parado havia meses. Escrevi o frontend e a integração com o backend do Apollo Podcasts, uma plataforma de podcasts de ficção.
 
-Liderei iniciativas de SEO que geraram crescimento significativo — aumentei cliques diários do Google de 5 para 105, melhorei o PageSpeed de 70% para 99%, e construí autoridade de domínio para DR 39 através de link building estratégico. Migrei o site de Webflow para WordPress para melhor performance e controle.
+Também cuidei do SEO, com bons resultados: os cliques diários no Google foram de 5 para 105, o PageSpeed subiu de 70% para 99% e a autoridade de domínio chegou a DR 39 com link building. Migrei o site de Webflow para WordPress para ter mais performance e controle.
 
-Implementei infraestrutura de email marketing usando AWS SES e otimizei presença em app stores através de ASO.`,
+Além disso, montei a infraestrutura de email marketing com AWS SES e trabalhei na presença nas app stores via ASO.`,
                     technologies: ['NextJS', 'Supabase', 'WordPress', 'AWS SES', 'SEMRUSH', 'AHREFS', 'MOZ'],
                 },
                 rocketJump: {
@@ -335,11 +335,11 @@ Implementei infraestrutura de email marketing usando AWS SES e otimizei presenç
                     role: 'Fundador',
                     period: 'Dezembro 2019 - Novembro 2024',
                     location: 'Curitiba, Brasil',
-                    description: `Fundador da Rocket Jump, empresa de marketing digital focada em co-produzir e lançar infoprodutos em parceria com criadores de conteúdo. Supervisionei aspectos estratégicos e operacionais de lançamentos de produtos digitais, do planejamento de conteúdo à execução de vendas.
+                    description: `Fundei a Rocket Jump, empresa de marketing digital que co-produzia e lançava infoprodutos com criadores de conteúdo. Cuidei tanto da estratégia quanto do operacional desses lançamentos, do planejamento do conteúdo até a execução das vendas.
 
-Lancei múltiplos produtos digitais com sucesso e ajudei criadores de conteúdo a estabelecer forte presença online. Gerenciei campanhas estratégicas de anúncios pagos no Facebook, Instagram, LinkedIn e TikTok, gerando leads e crescimento de vendas. Liderei o desenvolvimento de landing pages de alta conversão.
+Lancei vários produtos digitais e ajudei criadores a construir audiência. Rodei campanhas pagas no Facebook, Instagram, LinkedIn e TikTok que geraram leads e vendas, e liderei o trabalho nas landing pages feitas para converter.
 
-Gerenciei equipe de edição de vídeo, projetei e otimizei landing pages, e implementei automação de email marketing com AWS SES.`,
+Também gerenciei uma equipe de edição de vídeo, criei e ajustei landing pages e montei automação de email marketing com AWS SES.`,
                     technologies: ['WordPress', 'Elementor', 'N8N', 'WhatsApp API', 'AWS SES', 'Typebot', 'Facebook Ads', 'Instagram Ads', 'LinkedIn Ads', 'TikTok Ads', 'Google Analytics', 'SEMRUSH', 'AHREFS'],
                 },
                 rebbel: {
@@ -347,11 +347,11 @@ Gerenciei equipe de edição de vídeo, projetei e otimizei landing pages, e imp
                     role: 'Fundador',
                     period: 'Março 2016 - Março 2019',
                     location: 'Cascavel, Brasil',
-                    description: `Fundei a Rebbel como loja de relógios masculinos, posteriormente expandindo para uma marca de vestuário masculino focada em camisetas.
+                    description: `Comecei a Rebbel como loja de relógios masculinos e depois transformei numa marca de roupa masculina, focada em camisetas.
 
-Migrei com sucesso a plataforma e-commerce de PrestaShop para WordPress e WooCommerce, melhorando experiência do usuário e eficiência operacional. Melhorei o SEO local e aumentei tráfego orgânico através de estratégias de otimização direcionadas.
+Migrei a loja de PrestaShop para WordPress e WooCommerce, o que deixou tudo mais fácil de usar e de tocar. Melhorei o SEO local e trouxe mais tráfego orgânico.
 
-Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram engajamento do cliente e taxas de conversão. Gerenciei todos os aspectos da plataforma e-commerce, da configuração inicial à manutenção e otimização contínuas.`,
+Criei funis de vendas e campanhas de newsletter que engajaram mais os clientes e melhoraram a conversão. Toquei a loja inteira sozinho, da configuração inicial à manutenção do dia a dia.`,
                     technologies: ['PrestaShop', 'WordPress', 'WooCommerce', 'Ubersuggest'],
                 },
             },
@@ -402,7 +402,7 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
                 aicliff: {
                     name: 'The AI Cliff',
                     tagline: 'Newsletter sobre IA no Substack',
-                    description: 'Minha newsletter onde escrevo sobre inteligência artificial — LLMs, agentes de IA e as ferramentas e ideias que moldam como construímos com IA. Visões práticas direto da fronteira da área.',
+                    description: 'Minha newsletter sobre inteligência artificial: LLMs, agentes de IA e as ferramentas e ideias que mudam como construímos com IA. Textos práticos de quem trabalha na área.',
                     features: ['LLMs', 'Agentes de IA', 'RAG', 'Engenharia de Prompt', 'Ferramentas de IA'],
                 },
                 supapanel: {
@@ -425,7 +425,7 @@ Desenvolvi funis de vendas efetivos e campanhas de newsletter que melhoraram eng
         // Contact Section
         contact: {
             title: 'Vamos Conectar',
-            subtitle: 'Interessado em trabalhar junto? Fique à vontade para entrar em contato!',
+            subtitle: 'Quer trabalhar junto? Manda uma mensagem.',
             linkedin: 'Conectar no LinkedIn',
             email: 'Enviar um Email',
             whatsapp: 'Conversar no WhatsApp',
