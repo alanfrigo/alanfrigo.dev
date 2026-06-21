@@ -7,6 +7,7 @@ export default function Projects() {
     const { t } = useLanguage();
 
     const projects = [
+        { key: 'schiphol', logo: '/schiphol-logo.svg', githubUrl: 'https://github.com/alanfrigo/schiphol-flights-etl' },
         { key: 'rkj', logo: '/rkj-logo.svg', githubUrl: 'https://github.com/alanfrigo/rkj-ai' },
         { key: 'supapanel', logo: '/logo-supapanel.png', githubUrl: 'https://github.com/alanfrigo/SupaPanel' },
         { key: 'brain', logo: '/brain-logo.svg', githubUrl: 'https://github.com/alanfrigo/brain' },

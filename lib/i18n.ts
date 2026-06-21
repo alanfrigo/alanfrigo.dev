@@ -189,6 +189,11 @@ I built sales funnels and newsletter campaigns that got customers more engaged a
                     description: 'My newsletter about artificial intelligence: LLMs, AI agents, and the tools and ideas changing how we build with AI. Practical writing from someone working in the field.',
                     features: ['LLMs', 'AI Agents', 'RAG', 'Prompt Engineering', 'AI Tooling'],
                 },
+                schiphol: {
+                    name: 'Schiphol Flights ELT',
+                    description: 'End-to-end ELT pipeline on live flight data from Amsterdam Schiphol Airport. Python extracts and loads into PostgreSQL with idempotent upserts, dbt models a tested star schema, and a Streamlit dashboard reads the aggregated marts. The whole stack runs on Docker Compose. A study project for sharpening data engineering fundamentals.',
+                    features: ['Python Extract + Load', 'PostgreSQL', 'dbt Star Schema', 'Idempotent Upserts', 'dbt Data Tests', 'Streamlit + Plotly', 'Docker Compose'],
+                },
                 supapanel: {
                     name: 'SupaPanel',
                     description: 'Open-source management panel for self-hosted Supabase instances. Deploy your own Supabase infrastructure on any Linux server with a single command.',
@@ -404,6 +409,11 @@ Criei funis de vendas e campanhas de newsletter que engajaram mais os clientes e
                     tagline: 'Newsletter sobre IA no Substack',
                     description: 'Minha newsletter sobre inteligência artificial: LLMs, agentes de IA e as ferramentas e ideias que mudam como construímos com IA. Textos práticos de quem trabalha na área.',
                     features: ['LLMs', 'Agentes de IA', 'RAG', 'Engenharia de Prompt', 'Ferramentas de IA'],
+                },
+                schiphol: {
+                    name: 'Schiphol Flights ELT',
+                    description: 'Pipeline ELT ponta a ponta com dados de voos do Aeroporto de Amsterdam Schiphol. Python extrai e carrega no PostgreSQL com upserts idempotentes, o dbt modela um star schema testado e um dashboard em Streamlit lê os marts agregados. A stack inteira sobe com Docker Compose. Projeto de estudo para afiar os fundamentos de engenharia de dados.',
+                    features: ['Extract + Load em Python', 'PostgreSQL', 'Star Schema com dbt', 'Upserts Idempotentes', 'Testes de Dados dbt', 'Streamlit + Plotly', 'Docker Compose'],
                 },
                 supapanel: {
                     name: 'SupaPanel',
