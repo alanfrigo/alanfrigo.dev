@@ -180,12 +180,17 @@ I built sales funnels and newsletter campaigns that got customers more engaged a
         projects: {
             title: 'Projects',
             viewOnGithub: 'View on GitHub',
-            readBlog: 'Read The AI Cliff',
-            blogBadge: 'Blog',
+            readBlog: 'Read on Substack',
+            featuredBadge: 'Featured project',
             items: {
+                pixelStudio: {
+                    name: 'Pixel Studio',
+                    description: 'An open-source, local-first pixel art studio I built for game developers. It turns AI-generated images into game-ready sprites, animations, and tilesets using a deterministic pipeline that recovers the pixel grid and checks which textures tile seamlessly.',
+                    imageAlt: 'Pixel art of a wooden bridge over a river in a forest at sunset.',
+                    features: ['Sprites & Animation', 'Seamless Tilesets', 'Game Asset Export'],
+                },
                 aicliff: {
                     name: 'The AI Cliff',
-                    tagline: 'AI newsletter on Substack',
                     description: 'My newsletter about artificial intelligence: LLMs, AI agents, and the tools and ideas changing how we build with AI. Practical writing from someone working in the field.',
                     features: ['LLMs', 'AI Agents', 'RAG', 'Prompt Engineering', 'AI Tooling'],
                 },
@@ -401,12 +406,17 @@ Criei funis de vendas e campanhas de newsletter que engajaram mais os clientes e
         projects: {
             title: 'Projetos',
             viewOnGithub: 'Ver no GitHub',
-            readBlog: 'Ler o The AI Cliff',
-            blogBadge: 'Blog',
+            readBlog: 'Ler no Substack',
+            featuredBadge: 'Projeto em destaque',
             items: {
+                pixelStudio: {
+                    name: 'Pixel Studio',
+                    description: 'Estúdio de pixel art de código aberto que criei para desenvolvedores de jogos e que roda na própria máquina. Ele transforma imagens geradas por IA em sprites, animações e tilesets prontos para uso, com um pipeline determinístico que recupera a grade de pixels e verifica se as texturas se repetem sem emendas.',
+                    imageAlt: 'Cena em pixel art de uma ponte de madeira sobre um rio na floresta ao pôr do sol.',
+                    features: ['Sprites e Animação', 'Tilesets sem Emendas', 'Exportação de Assets'],
+                },
                 aicliff: {
                     name: 'The AI Cliff',
-                    tagline: 'Newsletter sobre IA no Substack',
                     description: 'Minha newsletter sobre inteligência artificial: LLMs, agentes de IA e as ferramentas e ideias que mudam como construímos com IA. Textos práticos de quem trabalha na área.',
                     features: ['LLMs', 'Agentes de IA', 'RAG', 'Engenharia de Prompt', 'Ferramentas de IA'],
                 },

@@ -20,6 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Featured project
+
+The Projects section features [Pixel Studio](https://github.com/alanfrigo/pixel-studio). Its local preview, `public/pixel-studio.png`, shows a pixel-art forest bridge at sunset. The card's English and Portuguese copy lives in `lib/i18n.ts`.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
